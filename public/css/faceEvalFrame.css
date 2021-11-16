@@ -1,0 +1,98 @@
+.myBody
+{
+    height:2500px;
+}
+
+.all
+{
+    opacity:1;
+}
+/*------------------*/
+.frame-X
+{
+    position:absolute;
+    margin-left: 8vh;
+    width: 32vh;
+    top: 0vh;
+    left: 0vh;
+    opacity:0;
+}
+.frame-X-0
+{
+    display:flex;
+    flex-direction: column;
+}
+.frame-X-0-0
+{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.questionIndexText
+{
+    font-size:17px;
+}
+/*------------------*/
+.frame-A
+{
+    margin-left: -190px;
+    margin-right: -100px;
+    opacity:0;
+}
+.frame-A-0
+{
+    display:flex;
+    flex-direction: column;
+}
+.frame-A-0-0
+{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+/*--------------------------------*/
+.frame-B
+{
+    opacity:0;
+}
+.frame-B-0
+{
+    display:flex;
+    flex-direction: column;
+}
+.frame-B-0-0
+{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    transform-origin: top;
+    transform:scale(0.75);
+    filter: invert(1);
+}
+.frame-B-0-1
+{
+    margin-top: -179px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    opacity:0;
+    transform:scale(0);
+}
+/*--------------------------------*/
+
+.frame-C
+{
+    margin-top:50px;
+    margin-bottom:100px
+}
+.frame-C-0
+{
+    display:flex;
+    flex-direction: column;
+}
+.frame-C-0-0
+{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
