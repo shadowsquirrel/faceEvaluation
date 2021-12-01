@@ -1,7 +1,7 @@
 
 // debug data
 // debug data
-let currentPicture = undefined;
+// let currentPicture = undefined;
 
 
 window.onload = function() {
@@ -65,7 +65,7 @@ window.onload = function() {
     node.emit('HTML-requestCurrentPicture');
 
 
-    picture.set(currentPicture);
+    // picture.set(currentPicture);
 
     setTimeout(()=>{
         show.picture();

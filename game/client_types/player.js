@@ -173,11 +173,14 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
         }
     });
 
-
     stager.extendStep('end', {
-        widget: 'EndScreen',
-        init: function() {
-
+        frame: 'finalScreen.htm',
+        cb: function() {
+            setTimeout(()=>{
+                this.talk('END THE EXPERIMENT')
+                node.done();
+            }, 30000)
         }
     });
+
 };
