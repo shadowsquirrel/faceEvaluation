@@ -37,7 +37,7 @@ module.exports = {
      *
      * Default: the name of the game, as found in the package.json file.
      */
-    // name: 'faceEvaluation',
+    name: 'Experiment',
 
     /**
      * ## alias (string|array) Optional
@@ -89,7 +89,7 @@ module.exports = {
      *
      * Default: name-of-the-channel/admin
      */
-    // adminServer: 'faceEvaluation/admin',
+    adminServer: 'faceEvaluation/myendpoint',
 
     /**
      * ## getFromAdmins (boolean) Optional
@@ -194,7 +194,7 @@ module.exports = {
      *
      * Default: TRUE
      */
-    // sioQuery: false,
+    sioQuery: false,
 
     /**
      * ### defaultChannel (boolean) Optional
