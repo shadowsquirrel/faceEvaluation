@@ -6,6 +6,12 @@ let currentPicture = undefined;
 
 window.onload = function() {
 
+    myFrame.test();
+    myFrame.test();
+    myFrame.getHeight();
+    myFrame.test();
+    myFrame.test();
+
     var node = parent.node;
 
     // ---------------------- //
@@ -59,7 +65,15 @@ window.onload = function() {
     node.emit('HTML-requestCurrentPicture');
 
 
-    // picture.set(currentPicture);
+    picture.set(currentPicture);
+
+    setTimeout(()=>{
+        show.picture();
+    }, 500)
+
+    setTimeout(()=>{
+        show.sliders();
+    }, 1500)
 
 
     $('#submitButton').click(function() {

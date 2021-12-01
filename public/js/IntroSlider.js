@@ -1,30 +1,7 @@
 
 let slider = {};
-let decision = {
-    attract:undefined,
-    intel:undefined,
-    comp:undefined,
-    friend:undefined,
-    like:undefined
-}
 
-slider.activatedList = [0,0,0,0,0];
-slider.showButton = function() {
 
-    let sum = slider.activatedList.reduce((a,b) => a + b, 0)
-
-    if(sum === 5) {
-
-        setTimeout(()=>{
-
-            $('.frame-button').css({'transition':'0.15s',
-            'opacity':'1', 'transform':'scale(1)'});
-
-        }, 250)
-
-    }
-
-}
 
 slider.bar = function(val, id) {
 
@@ -76,7 +53,7 @@ slider.bar = function(val, id) {
         // paper_bgcolor: 'white',
         barmode: 'group',
         height: 50,
-        width: 350,
+        width: 300,
         margin: {"t": 20, "b": 0, "l": 25, "r": 27},
         xaxis: {
             side: 'top',
@@ -114,90 +91,16 @@ slider.bar = function(val, id) {
 };
 
 slider.attract = document.getElementById('attractSlider');
-slider.intel = document.getElementById('intelSlider');
-slider.comp = document.getElementById('compSlider');
-slider.friend = document.getElementById('friendSlider');
-slider.like = document.getElementById('likeSlider');
 
 slider.attract.oninput = function() {
 
     // get the value from the slider
     var val = parseFloat(slider.attract.value);
 
-    decision.attract = val;
-
     // update bar plot
     slider.bar(val, 'attractBar');
 
-    // update slider activated switch
-    console.log('attract slider is changed');
-    slider.activatedList[0] = 1;
-    slider.showButton();
-
 }
-slider.intel.oninput = function() {
 
-    // get the value from the slider
-    var val = parseFloat(slider.intel.value);
-
-    decision.intel = val;
-
-    // update bar plot
-    slider.bar(val, 'intelBar');
-
-    console.log('intel slider is changed');
-    slider.activatedList[1] = 1;
-    slider.showButton();
-
-}
-slider.comp.oninput = function() {
-
-    // get the value from the slider
-    var val = parseFloat(slider.comp.value);
-
-    decision.comp = val;
-
-    // update bar plot
-    slider.bar(val, 'compBar');
-
-    console.log('comp slider is changed');
-    slider.activatedList[2] = 1;
-    slider.showButton();
-
-}
-slider.friend.oninput = function() {
-
-    // get the value from the slider
-    var val = parseFloat(slider.friend.value);
-
-    decision.friend = val;
-
-    // update bar plot
-    slider.bar(val, 'friendBar');
-
-    console.log('friend slider is changed');
-    slider.activatedList[3] = 1;
-    slider.showButton();
-
-}
-slider.like.oninput = function() {
-
-    // get the value from the slider
-    var val = parseFloat(slider.like.value);
-
-    decision.like = val;
-
-    // update bar plot
-    slider.bar(val, 'likeBar');
-
-    console.log('like slider is changed');
-    slider.activatedList[4] = 1;
-    slider.showButton();
-
-}
 
 slider.bar(0, 'attractBar');
-slider.bar(0, 'intelBar');
-slider.bar(0, 'compBar');
-slider.bar(0, 'friendBar');
-slider.bar(0, 'likeBar');

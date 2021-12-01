@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link rel="stylesheet" href="css/surveyMain.css">
+    <link rel="stylesheet" href="css/surveyInitial.css">
+
+    <link rel="stylesheet" href="css/surveyMobile.css">
+    <link rel="stylesheet" href="css/surveyTablet.css">
+    <link rel="stylesheet" href="css/surveyDesktop.css">
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Experiment</title>
+
+</head>
+<body>
+
+    <div class='frame-main'>
+
+        <div class='frame-intro'>
+            <p>
+                3 Questions About You
+            </p>
+        </div>
+
+        <div class='frame-progressBar'>
+
+            <div class='frame-A-0' id='frame-0'>
+
+                <div class='frame-progressBar-text'>
+                    <p class='questionIndexText'>
+                        Question <span id=questionIndex class=qIndex></span>/<span id=numOfQuestion class=qIndex></span>
+                    </p>
+                </div>
+
+                <div class="container" style='opacity:0;'>
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 10%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class='frame-questions'>
+
+            <div class='question gender'>
+
+                <p>
+                    What gender do you identify with?
+                </p>
+
+                <div class=buttonWrap>
+
+                    <div class=button id=female>Female</div>
+
+                    <div class=button id=male>Male</div>
+
+                    <div class=button id=diverse>Diverse</div>
+
+                </div>
+
+            </div>
+
+            <div class='question age'>
+
+                <p>
+                    What is your age group (in years)?
+                </p>
+
+                <div class=buttonWrap>
+
+                    <div class=button id=18-24>18-24 years old</div>
+
+                    <div class=button id=25-34>25-34 years old</div>
+
+                    <div class=button id=35-44>35-44 years old</div>
+
+                    <div class=button id=45-54>45-54 years old</div>
+
+                    <div class=button id=55-64>55-64 years old</div>
+
+                    <div class=button id=65-74>65-74 years old</div>
+
+                    <div class=button id=75plus>75 years or older</div>
+
+                </div>
+
+            </div>
+
+            <div class='question race'>
+
+                <p>
+                    How would you describe yourself?
+                </p>
+
+                <div class=buttonWrap>
+
+                    <div class=button id=alaska>American Indian or Alaskan Native</div>
+
+                    <div class=button id=asian>Asian</div>
+
+                    <div class=button id=hispanic>Latino</div>
+
+                    <div class=button id=black>Black or African American</div>
+
+                    <div class=button id=pacific>Native Hawaiian or Other Pacific Islander</div>
+
+                    <div class=button id=white>
+                        Caucasian
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <div class='frame-C'>
+
+        3 questions about you
+
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="js/surveyHelper.js"></script>
+    <script src="js/surveyButtons.js"></script>
+    <script src="js/survey.js"></script>
+
+</body>
+</html>

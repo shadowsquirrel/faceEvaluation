@@ -95,7 +95,7 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
                 intelligence: msg.intel,
                 competence: msg.comp,
                 friendliness: msg.friend,
-                likeability: msg.likeability
+                likeability: msg.like
             })
 
         })
@@ -121,6 +121,13 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
         })
 
 
+        node.on('HTML-finishIntro', function() {
+
+            this.talk('DONE WITH TUTORIAL');
+
+            node.done();
+
+        })
         // ------------------------------------------------------------------ //
         // ------------------------------------------------------------------ //
         // -------------------                          --------------------- //
@@ -146,7 +153,7 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
     });
 
     stager.extendStep('instructions', {
-        frame: 'instructions.htm',
+        frame: 'intro.htm',
         cb: function() {
 
         }
@@ -170,8 +177,7 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
     stager.extendStep('end', {
         widget: 'EndScreen',
         init: function() {
-            node.game.visualTimer.destroy();
-            node.game.doneButton.destroy();
+
         }
     });
 };

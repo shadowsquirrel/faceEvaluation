@@ -1,0 +1,14 @@
+.infoBox-2, .infoBox-3, .infoBox-4, .infoBox-5, .infoBox-6, .infoBox-7
+{
+    display:none;
+    opacity:0;
+}
+.infoBox-1
+{
+    opacity:0;
+}
+.infoButtonWrap
+{
+    opacity:1;
+    transform:scale(1);
+}

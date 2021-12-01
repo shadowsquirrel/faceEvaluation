@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link rel="stylesheet" href="css/introFrames.css">
+    <link rel="stylesheet" href="css/introSlider.css">
+
+    <link rel="stylesheet" href="css/infoBox.css">
+    <link rel="stylesheet" href="css/infoBoxAdjustments.css">
+    <link rel="stylesheet" href="css/sp_infoBoxAdjustments.css">
+
+    <link rel="stylesheet" href="css/initialIntroSetup.css">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+
+
+    <title>Instructions</title>
+
+</head>
+<body>
+
+    <div class='frame-InfoBoxWrap'>
+
+
+        <div class='infoBox infoBox-1'>
+
+            <div class='infoBoxWrap'>
+
+                <div class='infoMaterial infoMaterial-1'>
+
+                </div>
+
+                <div class='infoBoxText instructionText-1'>
+                    Welcome to our experiment!
+                    <span class=space>
+                        Please click the <span class=b>OK</span> button to continue
+                    </span>
+                </div>
+
+                <div class='infoButtonWrap okButton-1'>
+
+                    <div class='okButton' id='okButton-1'>
+                        OK
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class='infoBox infoBox-2'>
+
+            <div class='infoBoxWrap'>
+
+                <div class='infoMaterial infoMaterial-2'>
+
+                    <div class='frame-picture'>
+                        <img id='fP' class='facePicture' src='images/1.jpg'/>
+                    </div>
+
+                </div>
+
+                <div class='infoBoxText instructionText-2'>
+                    In this experiment, you will be presented with a series of
+                    20 facial images such as the one above.
+                </div>
+
+                <div class='infoButtonWrap okButton-2'>
+
+                    <div class='okButton' id='okButton-2'>
+                        OK
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class='infoBox infoBox-3'>
+
+            <div class='infoBoxWrap'>
+
+                <div class='infoBoxText instructionText-3'>
+                    For every facial image, you will be asked to give your view on
+                    the presented person's
+                    <br />
+                    <span class=bb>attractiveness</span>,
+                    <span class=bb>intelligence</span>,
+                    <span class=bb>competence</span>,
+                    <span class=bb>friendliness</span> and
+                    <span class=bb>likeability</span>.
+
+                </div>
+
+                <div class='infoButtonWrap okButton-3'>
+
+                    <div class='okButton' id='okButton-3'>
+                        OK
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class='infoBox infoBox-4'>
+
+            <div class='infoBoxWrap'>
+
+                <div class='infoBoxText instructionText-4'>
+                    For each trait
+
+                    <br />
+
+                    <span class=wordWrap>
+                        <span id='rotatingTraits' style='width: 1vh;'>Attractiveness</span>
+                    </span>
+
+                    <br />
+
+                    you will be asked to give a score
+                    from 0 to 10, where 10 is the highest.
+                </div>
+
+                <div class='infoButtonWrap okButton-4'>
+
+                    <div class='okButton' id='okButton-4'>
+                        OK
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class='infoBox infoBox-5'>
+
+            <div class='infoBoxWrap'>
+
+                <div class='infoMaterial infoMaterial-5'>
+
+                    <div class=sliderText>
+                        Friendly
+                    </div>
+
+                    <div class = 'sliderBar'>
+                        <input type='range' min = '0' max = '10' class = 'slider' value = '0' id = 'attractSlider' />
+                        <div id = 'attractBar' class = 'bar'></div>
+                    </div>
+
+                </div>
+
+                <div class='infoBoxText instructionText-5'>
+                    For each trait, you will report your score using a slider
+                    such as the one above.
+                </div>
+
+                <div class='infoButtonWrap okButton-5'>
+
+                    <div class='okButton' id='okButton-5'>
+                        OK
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class='infoBox infoBox-6'>
+
+            <div class='infoBoxWrap'>
+
+                <div class='infoBoxText instructionText-6'>
+                    Once you select a score for each trait, a SUBMIT button will appear.
+                    You will need to press the SUBMIT button to proceed to the next facial image.
+                </div>
+
+                <div class='infoButtonWrap okButton-6'>
+
+                    <div class='okButton' id='okButton-6'>
+                        OK
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class='infoBox infoBox-7'>
+
+            <div class='infoBoxWrap'>
+
+                <div class='infoBoxText instructionText-7'>
+                    You are done with the tutorial.
+                    <br />
+                    <br />
+                    Click START button to beging the experiment.
+                </div>
+
+                <div class='infoButtonWrap okButton-7'>
+                    <div class='okButton' id='okButton-7'>
+                        START
+                    </div>
+                </div>
+
+                <div class='infoBoxText instructionText-7'>
+                    Click REDO button to repeat this tutorial.
+                </div>
+
+                <div class='infoButtonWrap okButton-7'>
+                    <div class='okButton' id='redoButton-7'>
+                        REDO
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="js/rotatingTraitText.js"></script>
+        <script src="js/introSlider.js"></script>
+        <script src="js/intro.js"></script>
+        <script src="js/introMain.js"></script>
+
+    </body>
+    </html>

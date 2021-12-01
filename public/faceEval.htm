@@ -2,14 +2,12 @@
 <html>
 <head>
 
-    <link rel="stylesheet" href="css/frame.css">
-    <link rel="stylesheet" href="css/faceEvalFrame.css">
-    <link rel="stylesheet" href="css/frameA.css">
-    <link rel="stylesheet" href="css/submitButton.css">
+    <link rel="stylesheet" href="css/frames.css">
     <link rel="stylesheet" href="css/slider.css">
-
-    <link rel="stylesheet" href="css/smartPhone.css">
-
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/tablet.css">
+    <link rel="stylesheet" href="css/laptopDesktop.css">
+    <link rel="stylesheet" href="css/initialSetup.css">
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -25,24 +23,19 @@
 </head>
 <body>
 
-    <!-- <buttton type='button' class='myButton0' id='disconnectButton'>Disconnect</buttton> -->
+    <div class='frame-AB'>
 
-    <div id=start></div>
+        <div class='frame-A'>
 
+            <div class=frame-progressBar>
 
-    <div class = 'wrap  noselect'>
-
-        <div class='frame-X'>
-
-            <div class='frame-X-0' id='frame-0'>
-
-                <div class='frame-X-0-0 noselect' id='frame-0-0'>
+                <div class='frame-progressBar-text'>
                     <p class='questionIndexText'>
                         Evaluation <span id=questionIndex class=qIndex>1</span>/<span id=numOfQuestion class=qIndex>20</span>
                     </p>
                 </div>
 
-                <div class="container" style='opacity:0;'>
+                <div class="container">
                     <div class="progress">
                         <div class="progress-bar bg-success" role="progressbar" style="width: 10%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
@@ -50,140 +43,114 @@
 
             </div>
 
+            <div class='frame-picture'>
+                <img id='fP' class='facePicture' src='images/1.jpg'/>
+            </div>
+
         </div>
 
-        <div class = 'all'>
+        <div class='frame-B'>
 
-            <!-- FACIAL IMAGE -->
-            <div class='frame-A'>
+            <div class='frame-sliders'>
 
-                <div class='frame-A-0' id='frame-0'>
+                <div class=sliderWrapWrap>
 
-                    <div class='frame-A-0-0' id='frame-0-0'>
+                    <div class=sliderText>
+                        <p>
+                            Attractive
+                        </p>
+                    </div>
 
-                        <div class='innerWrap'>
-                            <img id='fP' class='facePicture' src='images/1.jpg'/>
-                        </div>
+                    <div class = 'sliderBar'>
+                        <input type='range' min = '0' max = '10' class = 'slider' value = '0' id = 'attractSlider' />
+                        <div id = 'attractBar' class = 'bar'></div>
+                    </div>
 
+                </div>
+
+                <div class=sliderWrapWrap>
+
+                    <div class=sliderText>
+                        <p>
+                            Intelligent
+                        </p>
+                    </div>
+
+                    <div class = 'sliderBar'>
+                        <input type='range' min = '0' max = '10' class = 'slider' value = '0' id = 'intelSlider' />
+                        <div id = 'intelBar' class = 'bar'></div>
+                    </div>
+
+                </div>
+
+                <div class=sliderWrapWrap>
+
+                    <div class=sliderText>
+                        <p>
+                            Competent
+                        </p>
+                    </div>
+
+                    <div class = 'sliderBar'>
+                        <input type='range' min = '0' max = '10' class = 'slider' value = '0' id = 'compSlider' />
+                        <div id = 'compBar' class = 'bar'></div>
+                    </div>
+
+                </div>
+
+                <div class=sliderWrapWrap>
+
+                    <div class=sliderText>
+                        <p>
+                            Friendly
+                        </p>
+                    </div>
+
+                    <div class = 'sliderBar'>
+                        <input type='range' min = '0' max = '10' class = 'slider' value = '0' id = 'friendSlider' />
+                        <div id = 'friendBar' class = 'bar'></div>
+                    </div>
+
+                </div>
+
+                <div class=sliderWrapWrap>
+
+                    <div class=sliderText>
+                        <p>
+                            Likeable
+                        </p>
+                    </div>
+
+                    <div class = 'sliderBar'>
+                        <input type='range' min = '0' max = '10' class = 'slider' value = '0' id = 'likeSlider' />
+                        <div id = 'likeBar' class = 'bar'></div>
                     </div>
 
                 </div>
 
             </div>
 
+            <div class='frame-button'>
 
+                <div class='submitButton' id='submitButton'>
 
-            <!-- EVALUATION SLIDERS -->
-            <div class='frame-B'>
-
-                <div class='frame-B-0'>
-
-                    <div class='frame-B-0-0'>
-
-                        <div class=sliderWrapWrap>
-
-                            <svg height="50" width="500" class=sliderTextWrap>
-                                <text x="50%" y="70%" dominant-baseline='middle'
-                                text-anchor='middle' fill="white" class='sliderText'>Attractiveness</text>
-                            </svg>
-
-                            <div class = 'sliderBar'>
-                                <input type='range' min = '0' max = '10' class = 'slider' value = '0' id = 'attractSlider' />
-                                <div id = 'attractBar' class = 'bar'></div>
-                            </div>
-
-                        </div>
-
-                        <div class=sliderWrapWrap>
-
-                            <svg height="54" width="500" class=sliderTextWrap>
-                                <text x="50%" y="70%" dominant-baseline='middle'
-                                text-anchor='middle' fill="white" class='sliderText'>Intelligence</text>
-                            </svg>
-
-                            <div class = 'sliderBar'>
-                                <input type='range' min = '0' max = '10' class = 'slider' value = '0' id = 'intelSlider' />
-                                <div id = 'intelBar' class = 'bar'></div>
-                            </div>
-
-                        </div>
-
-                        <div class=sliderWrapWrap>
-
-                            <svg height="50" width="500" class=sliderTextWrap>
-                                <text x="50%" y="70%" dominant-baseline='middle'
-                                text-anchor='middle' fill="white" class='sliderText'>Competence</text>
-                            </svg>
-
-                            <div class = 'sliderBar'>
-                                <input type='range' min = '0' max = '10' class = 'slider' value = '0' id = 'compSlider' />
-                                <div id = 'compBar' class = 'bar'></div>
-                            </div>
-
-                        </div>
-
-                        <div class=sliderWrapWrap>
-
-                            <svg height="50" width="500" class=sliderTextWrap>
-                                <text x="50%" y="70%" dominant-baseline='middle'
-                                text-anchor='middle' fill="white" class='sliderText'>Friendliness</text>
-                            </svg>
-
-                            <div class = 'sliderBar'>
-                                <input type='range' min = '0' max = '10' class = 'slider' value = '0' id = 'friendSlider' />
-                                <div id = 'friendBar' class = 'bar'></div>
-                            </div>
-
-                        </div>
-
-                        <div class=sliderWrapWrap>
-
-                            <svg height="50" width="500" class=sliderTextWrap>
-                                <text x="50%" y="70%" dominant-baseline='middle'
-                                text-anchor='middle' fill="white" class='sliderText'>Likeability</text>
-                            </svg>
-
-                            <div class = 'sliderBar'>
-                                <input type='range' min = '0' max = '10' class = 'slider' value = '0' id = 'likeSlider' />
-                                <div id = 'likeBar' class = 'bar'></div>
-                            </div>
-
-                        </div>
-
-
-                    </div>
-
-                    <div class='frame-B-0-1'>
-
-                        <div class='submitButton' id='submitButton'>
-
-                            <p>
-                                SUBMIT
-                            </p>
-
-                        </div>
-
-                    </div>
+                    SUBMIT
 
                 </div>
 
             </div>
 
-
-
         </div>
+
 
 
     </div>
 
-
-    <div id=end></div>
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="js/slider.js"></script>
     <script src="js/picture.js"></script>
+    <script src="js/myFrame.js"></script>
     <script src="js/main.js"></script>
-    <!-- <script src="js/identifyFaces.js"></script> -->
 
 </body>
 </html>

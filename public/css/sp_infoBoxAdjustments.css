@@ -1,0 +1,532 @@
+/* -------------------------- */
+/* iPhone 5 ----------------- */
+/* -------------------------- */
+@media only screen and (min-device-width: 320px)
+and (max-device-height: 568px)
+and (orientation : landscape)
+and (-webkit-device-pixel-ratio: 2){
+
+    .sliderText
+    {
+        font-size:6vh;
+    }
+}
+
+@media only screen and (device-width: 320px)
+and (device-height: 568px)
+{
+
+    .sliderBar
+    {
+        transform-origin: top;
+        transform:scale(2.5);
+    }
+
+    .infoMaterial-5
+    {
+        margin-top:-14vh;
+    }
+    .okButton-5
+    {
+        margin-top:4vh;
+    }
+
+}
+
+
+/* -------------------------- */
+/* iPhone 6, 7, 8 ----------- */
+/* -------------------------- */
+@media only screen and (device-width: 375px)
+and (device-height: 667px)
+{
+
+    .sliderBar
+    {
+        transform-origin: top;
+        transform:scale(2.5);
+    }
+
+    .infoMaterial-5
+    {
+        margin-top:-5vh;
+    }
+
+    .okButton-5
+    {
+        margin-top:12vh;
+    }
+
+}
+
+@media only screen and (device-width: 667px)
+and (device-height: 375px)
+and (orientation : landscape)
+and (-webkit-device-pixel-ratio: 2){
+    .sliderText
+    {
+        font-size:6vh;
+    }
+}
+
+@media only screen and (min-device-width: 375px)
+and (max-device-height: 667px)
+and (orientation : portrait)
+and (-webkit-device-pixel-ratio: 2){
+    /* Styles */
+
+}
+
+
+/* -------------------------- */
+/* iPhone 6+, 7+, 8+ -------- */
+/* -------------------------- */
+@media only screen and (min-device-width: 414px)
+and (max-device-height: 736px)
+and (orientation : landscape)
+and (-webkit-device-pixel-ratio: 3){
+    .sliderText
+    {
+        font-size:6vh;
+    }
+}
+
+@media only screen and (device-width: 414px)
+and (device-height: 736px)
+{
+    .sliderBar
+    {
+        transform-origin: top;
+        transform:scale(2.5);
+    }
+}
+
+
+/* -------------------------- */
+/* iPhone X ----------------- */
+/* -------------------------- */
+@media only screen and (device-width: 375px)
+and (device-height: 812px)
+and (orientation : landscape)
+and (-webkit-device-pixel-ratio: 3){
+    .sliderText
+    {
+        font-size:6vh;
+    }
+}
+
+@media only screen and (device-width: 375px)
+and (device-height: 812px)
+{
+    .sliderBar
+    {
+        transform-origin: top;
+        transform:scale(2.5);
+    }
+}
+
+
+/* -------------------------- */
+/* iPhone XS Max, XR -------- */
+/* -------------------------- */
+@media only screen and (device-width: 414px)
+and (device-height: 896px)
+and (orientation : landscape)
+{
+    .sliderText
+    {
+        font-size:6vh;
+    }
+}
+
+@media only screen and (device-width: 414px)
+and (device-height: 896px)
+{
+    .sliderBar
+    {
+        transform-origin: top;
+        transform:scale(2.5);
+    }
+}
+
+
+/* -------------------------- */
+/* Samsung Galaxy S3 & S4 --- */
+/* -------------------------- */
+@media only screen and (device-width: 320px)
+and (device-height: 640px)
+and (orientation : landscape)
+{
+    .sliderText
+    {
+        font-size:6vh;
+    }
+}
+
+@media only screen and (device-width: 320px)
+and (device-height: 640px)
+{
+    .sliderBar
+    {
+        transform-origin: top;
+        transform:scale(2.5);
+    }
+    .infoMaterial-5
+    {
+        margin-top:-16vh;
+    }
+    .okButton-5
+    {
+        margin-top:3vh;
+    }
+}
+
+
+/* -------------------------- */
+/* Samsung Galaxy S5 -------- */
+/* -------------------------- */
+@media only screen and (min-device-width: 360px)
+and (max-device-height: 640px)
+and (orientation : landscape)
+{
+    .sliderText
+    {
+        font-size:6vh;
+    }
+    .infoBoxText
+    {
+        font-size:4vh;
+    }
+    .infoMaterial-5
+    {
+        margin-top:-27vh;
+    }
+    .okButton-5
+    {
+        margin-top:4vh;
+    }
+}
+
+@media only screen and (device-width: 360px)
+and (device-height: 640px)
+{
+    .sliderBar
+    {
+        transform-origin: top;
+        transform:scale(2.5);
+    }
+}
+
+/* -------------------------- */
+/* PIXEL 2 -------- */
+/* -------------------------- */
+
+@media only screen and (device-width: 411px)
+and (device-height: 731px)
+{
+    .sliderBar
+    {
+        transform-origin: top;
+        transform:scale(2.5);
+    }
+    .okButton-5
+    {
+        margin-top:7vh;
+        margin-bottom:7vh;
+    }
+}
+
+/* -------------------------- */
+/* PIXEL 2XL -------- */
+/* -------------------------- */
+
+@media only screen and (device-width: 411px)
+and (device-height: 823px)
+{
+    .sliderBar
+    {
+        transform-origin: top;
+        transform:scale(2.5);
+    }
+}
+
+/* -------------------------- */
+/* iPad (landscape) --------- */
+/* -------------------------- */
+@media only screen
+and (device-width : 1024px)
+and (device-height : 768px)
+{
+    .sliderText
+    {
+        font-size:6vh;
+        margin-bottom:0vh;
+    }
+    .sliderBar
+    {
+        transform-origin: top;
+        transform:scale(2.5);
+    }
+    .infoBox
+    {
+        width:66%;
+    }
+    .okButton
+    {
+        width:30%;
+    }
+}
+
+/* -------------------------- */
+/* iPad (portrait) ---------- */
+/* -------------------------- */
+@media only screen
+and (device-width : 768px)
+and (device-height : 1024px)
+and (orientation : portrait) {
+    .sliderText
+    {
+        font-size:3vh;
+        margin-bottom:0vh;
+    }
+    .sliderBar
+    {
+        transform-origin: top;
+        transform:scale(2.5);
+    }
+    .okButton
+    {
+        width:30%;
+    }
+    .infoMaterial-5
+    {
+        margin-top:-6vh;
+        margin-bottom:19vh;
+    }
+}
+
+
+/* -------------------------- */
+/* Desktops and laptops ----- */
+/* -------------------------- */
+@media only screen
+and (min-width : 1025px)
+{
+    .sliderText
+    {
+        font-size:6vh;
+        margin-bottom:0vh;
+    }
+    .infoBox
+    {
+        width:66%;
+    }
+    .okButton
+    {
+        width:30%;
+    }
+}
+
+
+/* ------------------------- */
+/* Large screens ----------- */
+/* ------------------------- */
+@media only screen  and (width : 1440px) {
+    .sliderText
+    {
+        font-size:6vh;
+        margin-bottom:0vh;
+    }
+    .infoBox
+    {
+        width:66%;
+    }
+    .okButton
+    {
+        width:30%;
+    }
+}
+
+
+/* -------------------------- */
+/* iPad Pro (landscape) ----- */
+/* -------------------------- */
+@media only screen
+and (device-width : 1366px)
+and (device-height : 1024px)
+{
+    .sliderText
+    {
+        font-size:3vh;
+        margin-bottom:0vh;
+    }
+    .sliderBar
+    {
+        transform-origin: top;
+        transform:scale(2.5);
+    }
+    .infoBox
+    {
+        width:66%;
+    }
+    .okButton
+    {
+        width:30%;
+    }
+}
+
+/* -------------------------- */
+/* iPad Pro (portrait) ------ */
+/* -------------------------- */
+@media only screen
+and (device-width : 1024px)
+and (device-height : 1366px)
+and (orientation : portrait)
+{
+    .sliderText
+    {
+        font-size:6vh;
+        margin-bottom:0vh;
+    }
+    .sliderBar
+    {
+        transform-origin: top;
+        transform:scale(2.5);
+    }
+}
+
+/* -------------------------- */
+/* Surface Duo (portrait) ------ */
+/* -------------------------- */
+@media only screen
+and (device-width : 540px)
+and (device-height : 720px)
+{
+    .sliderText
+    {
+        font-size:6vh;
+        margin-bottom:0vh;
+    }
+    .sliderBar
+    {
+        transform-origin: top;
+        transform:scale(2.5);
+    }
+}
+
+/* -------------------------- */
+/* Galaxy Fold -------------- */
+/* -------------------------- */
+@media only screen
+and (device-width : 280px)
+and (device-height : 653px)
+{
+    .wordWrap
+    {
+        margin-left:-6vh;
+    }
+    .facePicture
+    {
+        height:31vh;
+    }
+    .infoBoxText
+    {
+        font-size:4vh;
+        width:40vh;
+    }
+    .sliderBar
+    {
+        transform-origin: top;
+        transform:scale(2.5);
+    }
+
+}
+
+@media only screen
+and (device-height : 280px)
+and (device-width : 653px)
+{
+
+
+}
+
+/*----------------------------*/
+@media only screen
+and (device-height : 768px)
+and (device-width : 1366px)
+{
+    .sliderBar
+    {
+        transform-origin: top;
+        transform:scale(2.5);
+    }
+    .infoMaterial-5
+    {
+        margin-bottom:20vh;
+    }
+
+}
+
+@media only screen
+and (min-device-height : 1080px)
+and (device-width : 1920px)
+{
+    .sliderBar
+    {
+        transform-origin: top;
+        transform:scale(2.5);
+    }
+    .infoMaterial-5
+    {
+        margin-bottom:20vh;
+    }
+
+}
+
+@media only screen
+and (device-height : 864px)
+and (device-width : 1536px)
+{
+    .sliderBar
+    {
+        transform-origin: top;
+        transform:scale(2.5);
+    }
+    .infoMaterial-5
+    {
+        margin-bottom:20vh;
+    }
+
+}
+
+@media only screen
+and (device-height : 900px)
+and (device-width : 1440px)
+{
+    .sliderBar
+    {
+        transform-origin: top;
+        transform:scale(2.5);
+    }
+    .infoMaterial-5
+    {
+        margin-bottom:20vh;
+    }
+
+}
+
+@media only screen
+and (device-height : 720px)
+and (device-width : 1280px)
+{
+    .sliderBar
+    {
+        transform-origin: top;
+        transform:scale(2.5);
+    }
+    .infoMaterial-5
+    {
+        margin-bottom:20vh;
+    }
+
+}

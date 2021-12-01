@@ -1,0 +1,19 @@
+.frame-intro
+{
+    display:none;
+    transition:1s;
+    opacity:0;
+}
+
+.frame-progressBar
+{
+    opacity:1;
+    transition:1s;
+    display:flex;
+}
+.frame-questions
+{
+    opacity:1;
+    transition:1s;
+    display:flex;
+}

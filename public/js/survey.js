@@ -10,12 +10,15 @@ window.onload = function() {
     setTimeout(()=>{
         $('.frame-C').css({'opacity':'0'});
         setTimeout(()=>{
-            $('.frame-A, .frame-B').css({'opacity':'1'});
+            $('.frame-A, .frame-B').css({'display':'flex'});
             setTimeout(()=>{
-                $('.frame-C').css({'display':'none'});
-            }, 300)
-        }, 750)
-    }, 5000)
+                $('.frame-A, .frame-B').css({'opacity':'1'});
+                setTimeout(()=>{
+                    $('.frame-C').css({'display':'none'});
+                }, 300)
+            }, 50)
+        }, 1250)
+    }, 2500)
 
     experiment.generate();
 

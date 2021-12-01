@@ -1,0 +1,176 @@
+/* ------------------------ */
+/* ------------------------ */
+/*         PORTRAIT         */
+/* ------------------------ */
+/* ------------------------ */
+/*   GENERAL MOBILE PHONES  */
+/* ------------------------ */
+/* ------------------------ */
+/*---- PORTRAIT ----*/
+@media only screen
+and (min-device-height: 927px)
+and (max-device-height: 1080px)
+and (max-device-width: 962px)
+and (orientation: portrait)
+{
+
+    .frame-A
+    {
+        justify-content: center;
+    }
+    .frame-B
+    {
+        margin-top:7%;
+        transform-origin: top;
+        transform:scale(0.7);
+    }
+    .questionIndexText
+    {
+        font-size:10em;
+    }
+    .question
+    {
+        font-size: 8em;
+        padding-left:15%;
+        padding-right:15%;
+    }
+    .buttonWrap
+    {
+        text-align: center;
+        display:flex;
+        flex-direction: column;
+        margin-top:10%;
+        font-size:6rem;
+    }
+    .bWrapGender
+    {
+        font-size:12rem;
+    }
+    .button
+    {
+        width:100%;
+        padding-left:0%;
+        margin-bottom:6rem;
+    }
+    .qText
+    {
+        text-align: center;
+    }
+
+
+}
+
+
+/* -------------------------- */
+/* iPad Pro ----------------- */
+/* -------------------------- */
+
+/*---- PORTRAIT ----*/
+@media only screen
+and (device-height : 1366px)
+and (device-width : 1024px)
+{
+    .frame-A
+    {
+        justify-content: center;
+    }
+    .frame-B
+    {
+        margin-top:7%;
+        transform-origin: top;
+        transform:scale(0.7);
+    }
+    .questionIndexText
+    {
+        font-size:10em;
+    }
+    .question
+    {
+        font-size: 8em;
+        padding-left:15%;
+        padding-right:15%;
+    }
+    .buttonWrap
+    {
+        text-align: center;
+        display:flex;
+        flex-direction: column;
+        margin-top:10%;
+        font-size:6rem;
+    }
+    .bWrapGender
+    {
+        font-size:12rem;
+    }
+    .button
+    {
+        width:100%;
+        padding-left:0%;
+        margin-bottom:6rem;
+    }
+    .qText
+    {
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+/* -------------------  */
+/* TABLET GENERAL SIZE  */
+/* -------------------- */
+/*---- LANDSCAPE ----*/
+
+@media only screen
+and (max-device-height: 962px)
+and (max-device-width: 1080px)
+and (orientation: landscape)
+{
+
+    .frame-A
+    {
+        justify-content: center;
+    }
+    .frame-B
+    {
+        margin-top:7%;
+        transform-origin: top;
+        transform:scale(0.7);
+    }
+    .questionIndexText
+    {
+        font-size:10em;
+    }
+    .question
+    {
+        font-size: 8em;
+        padding-left:15%;
+        padding-right:15%;
+    }
+    .buttonWrap
+    {
+        text-align: center;
+        display:flex;
+        flex-direction: column;
+        margin-top:10%;
+        font-size:6rem;
+    }
+    .bWrapGender
+    {
+        font-size:12rem;
+    }
+    .button
+    {
+        width:100%;
+        padding-left:0%;
+        margin-bottom:6rem;
+    }
+    .qText
+    {
+        text-align: center;
+    }
+
+}

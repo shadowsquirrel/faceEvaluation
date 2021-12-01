@@ -52,7 +52,7 @@ ageDecisionList.forEach(i => {
 
 // race buttons
 let raceDecisionList = [
-    'alaska', 'asian', 'black', 'pacific', 'white'
+    'alaska', 'asian', 'hispanic', 'black', 'pacific', 'white'
 ];
 
 raceDecisionList.forEach(i => {

@@ -1,0 +1,33 @@
+.frame-progressBar
+{
+    transition:1s;
+    opacity:0;
+}
+.frame-picture
+{
+    transition:1s;
+    opacity:0;
+
+}
+.frame-sliders
+{
+    transition:1s;
+    opacity:0;
+}
+.frame-button
+{
+    transition:1s;
+    transform:scale(0);
+    opacity:0;
+}
+.b
+{
+    font-weight:500;
+}
+
+
+.space
+{
+    display:block;
+    margin-top:5vh;
+}

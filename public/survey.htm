@@ -4,8 +4,10 @@
 
     <link rel="stylesheet" href="css/surveyFrame.css">
     <link rel="stylesheet" href="css/surveyFrameIntro.css">
-    <link rel="stylesheet" href="css/surveySmartPhone.css">
-
+    <!-- <link rel="stylesheet" href="css/surveySmartPhone.css"> -->
+    <link rel="stylesheet" href="css/surveyMobile.css">
+    <link rel="stylesheet" href="css/surveyTablet.css">
+    <link rel="stylesheet" href="css/surveyDesktop.css">
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -58,29 +60,29 @@
 
                         <div class='question gender'>
 
-                            <p>
-                                What gender do you identify with?
-                            </p>
+                                <p class='qText'>
+                                    What gender do you identify with?
+                                </p>
 
-                            <div class=buttonWrap>
+                                <div class='buttonWrap bWrapGender'>
 
-                                <div class=button id=female>Female</div>
+                                    <div class=button id=female>Female</div>
 
-                                <div class=button id=male>Male</div>
+                                    <div class=button id=male>Male</div>
 
-                                <div class=button id=diverse>Diverse</div>
+                                    <div class=button id=diverse>Diverse</div>
+
+                                </div>
 
                             </div>
 
-                        </div>
-
                         <div class='question age'>
 
-                            <p>
+                            <p class='qText'>
                                 What is your age group (in years)?
                             </p>
 
-                            <div class=buttonWrap>
+                            <div class='buttonWrap bWrapAge'>
 
                                 <div class=button id=18-24>18-24 years old</div>
 
@@ -102,15 +104,17 @@
 
                         <div class='question race'>
 
-                            <p>
+                            <p class='qText'>
                                 How would you describe yourself?
                             </p>
 
-                            <div class=buttonWrap>
+                            <div class='buttonWrap bWrapRace'>
 
-                                <div class=button id=alaska>American Indian or Alaska Native</div>
+                                <div class=button id=alaska>American Indian or Alaskan Native</div>
 
                                 <div class=button id=asian>Asian</div>
+
+                                <div class=button id=hispanic>Latino</div>
 
                                 <div class=button id=black>Black or African American</div>
 
@@ -133,15 +137,7 @@
 
             <div class='frame-C'>
 
-                <div class='frame-C-0'>
-
-                    <div class='frame-C-0-0'>
-                        <p class=introText>
-                            3 questions about you
-                        </p>
-                    </div>
-
-                </div>
+                3 questions about you
 
             </div>
 

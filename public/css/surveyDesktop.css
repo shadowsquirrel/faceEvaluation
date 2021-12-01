@@ -1,0 +1,100 @@
+/* -------------------------- */
+/* Desktops and laptops ----- */
+/* -------------------------- */
+@media only screen
+and (min-width : 1280px)
+{
+
+}
+
+
+
+/*--------------------------------*/
+/*----- SPECIFIC LAPTOP SIZES ----*/
+/*--------------------------------*/
+
+/*------------ 2.5% ----------------*/
+@media only screen
+and (device-height : 720px)
+and (device-width : 1280px)
+{
+
+}
+
+/*------------ 5% ----------------*/
+@media only screen
+and (device-height : 800px)
+and (device-width : 1280px)
+{
+
+}
+
+/*------------ 4% ----------------*/
+@media only screen
+and (device-height : 900px)
+and (device-width : 1600px)
+{
+
+}
+
+
+/*------------- 6% ---------------*/
+
+@media only screen
+and (device-height : 900px)
+and (device-width : 1440px)
+{
+
+}
+
+
+/*------------ %7 ----------------*/
+
+@media only screen
+and (device-height : 864px)
+and (device-width : 1536px)
+{
+
+}
+
+
+/*------------ 15% ----------------*/
+@media only screen
+and (device-height : 768px)
+and (device-width : 1366px)
+{
+
+}
+
+/*---------- 20% ------------------*/
+@media only screen
+and (device-height : 1080px)
+and (device-width : 1920px)
+{
+
+}
+
+
+
+/* -------------------------- */
+/* iPad --------------------- */
+/* -------------------------- */
+/*---- LANDSCAPE ----*/
+@media only screen
+and (device-height : 768px)
+and (device-width : 1024px)
+{
+
+}
+
+
+/* -------------------------- */
+/* iPad Pro ----------------- */
+/* -------------------------- */
+/*---- LANDSCAPE ----*/
+@media only screen
+and (device-height : 1024px)
+and (device-width : 1366px)
+{
+
+}

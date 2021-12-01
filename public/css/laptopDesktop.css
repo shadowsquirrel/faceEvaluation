@@ -1,0 +1,289 @@
+/* -------------------------- */
+/* Desktops and laptops ----- */
+/* -------------------------- */
+@media only screen
+and (min-width : 1280px)
+{
+    .frame-AB
+    {
+        flex-direction:row;
+        transform:scale(0.8);
+    }
+    .frame-progressBar
+    {
+        width:50%;
+        margin-left:25%;
+    }
+    .facePicture
+    {
+        height:70em;
+    }
+    .frame-B
+    {
+        height:max-content;
+        transform:scale(0.65);
+        transform-origin:left top;
+    }
+    .sliderWrapWrap
+    {
+        margin-bottom:7em;
+        margin-top:0em;
+    }
+    .sliderText
+    {
+        margin-bottom:0em;
+        font-size:4em;
+    }
+    .sliderBar
+    {
+        transform:scaleY(1.5) scaleX(1.7);
+    }
+    .frame-button
+    {
+        padding-left:15%;
+        padding-right:15%;
+        padding-top:3em;
+        padding-bottom:3em;
+        margin-top:1em;
+        margin-bottom:10em;
+    }
+    .submitButton
+    {
+        height:auto;
+        padding-bottom:0em;
+    }
+}
+
+
+
+/*--------------------------------*/
+/*----- SPECIFIC LAPTOP SIZES ----*/
+/*--------------------------------*/
+
+/*------------ 2.5% ----------------*/
+@media only screen
+and (device-height : 720px)
+and (device-width : 1280px)
+{
+    .frame-B
+    {
+        margin-left:-8em;
+    }
+    .submitButton
+    {
+        font-size:3em;
+        height:1.7em;
+    }
+}
+
+/*------------ 5% ----------------*/
+@media only screen
+and (device-height : 800px)
+and (device-width : 1280px)
+{
+    .frame-B
+    {
+        margin-left:-8em;
+    }
+    .submitButton
+    {
+        font-size:3em;
+        height:1.7em;
+    }
+}
+
+/*------------ 4% ----------------*/
+@media only screen
+and (device-height : 900px)
+and (device-width : 1600px)
+{
+    .facePicture
+    {
+        height:89em;
+    }
+    .frame-B
+    {
+        margin-left:-20em;
+    }
+    .sliderWrapWrap
+    {
+        margin-bottom:10em;
+        margin-top:10em;
+    }
+    .submitButton
+    {
+        font-size:5em;
+        height:1.7em;
+    }
+}
+
+
+/*------------- 6% ---------------*/
+
+@media only screen
+and (device-height : 900px)
+and (device-width : 1440px)
+{
+    .facePicture
+    {
+        height:89em;
+        margin-left:-10em;
+        margin-right:10em;
+    }
+    .frame-B
+    {
+        margin-left:-20em;
+    }
+    .sliderWrapWrap
+    {
+        margin-bottom:10em;
+        margin-top:10em;
+    }
+    .submitButton
+    {
+        font-size:5em;
+        height:1.7em;
+    }
+}
+
+
+/*------------ %7 ----------------*/
+
+@media only screen
+and (device-height : 864px)
+and (device-width : 1536px)
+{
+    .facePicture
+    {
+        height:85em;
+    }
+    .frame-B
+    {
+        transform:scale(0.7);
+        margin-left: -21em;
+        padding-top:60em;
+        padding-left:20vh;
+        padding-right:16vh;
+        margin-top:-35em;
+    }
+    .submitButton
+    {
+        height:1.5em;
+        font-size:4em;
+        padding-bottom:1.6em;
+    }
+}
+
+
+/*------------ 15% ----------------*/
+@media only screen
+and (device-height : 768px)
+and (device-width : 1366px)
+{
+
+}
+
+/*---------- 20% ------------------*/
+@media only screen
+and (device-height : 1080px)
+and (device-width : 1920px)
+{
+    .facePicture
+    {
+        height:107em;
+    }
+    .frame-B
+    {
+        transform:scale(0.9);
+        margin-left: -25em;
+        padding-top:30em;
+        padding-left:16vh;
+        padding-right:16vh;
+        margin-top:-15em;
+    }
+    .submitButton
+    {
+        height:1.5em;
+        font-size:4em;
+        padding-bottom:1.6em;
+    }
+}
+
+
+
+/* -------------------------- */
+/* iPad --------------------- */
+/* -------------------------- */
+/*---- LANDSCAPE ----*/
+@media only screen
+and (device-height : 768px)
+and (device-width : 1024px)
+{
+    .facePicture
+    {
+        margin-top:-3em;
+    }
+    .sliderWrapWrap
+    {
+        margin-top:5em;
+        margin-bottom:9em;
+        transform:scaleY(2) scaleX(2.2);
+    }
+    .sliderText
+    {
+        font-size:2.5em;
+        margin-bottom:-0.5em;
+    }
+    .frame-sliders
+    {
+        display:flex;
+        flex-direction:column;
+    }
+    .frame-button
+    {
+        display:flex;
+        width:70%;
+        margin-left:15%;
+    }
+    .submitButton
+    {
+        height:auto;
+        font-size:6em;
+        text-align:center;
+        padding-bottom:0em;
+    }
+}
+
+
+/* -------------------------- */
+/* iPad Pro ----------------- */
+/* -------------------------- */
+/*---- LANDSCAPE ----*/
+@media only screen
+and (device-height : 1024px)
+and (device-width : 1366px)
+{
+    .frame-AB
+    {
+        flex-direction:column;
+    }
+    .frame-B
+    {
+        transform:scale(1);
+        transform-origin: center;
+    }
+    .sliderWrapWrap
+    {
+        margin-top:6em;
+        margin-bottom:16em;
+        transform:scaleY(2) scaleX(2.2);
+    }
+    .sliderText
+    {
+        font-size:3em;
+    }
+    .submitButton
+    {
+        font-size:5em;
+    }
+}

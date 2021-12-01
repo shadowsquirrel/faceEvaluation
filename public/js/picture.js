@@ -15,12 +15,12 @@ let show = {};
 
 show.picture = function() {
 
-    $('.frame-A').css({'transition':'1s', 'opacity':'1'});
+    $('.frame-picture').css({'transition':'1s', 'opacity':'1'});
 
 }
 
 show.sliders = function() {
 
-    $('.frame-B, .container, .frame-X').css({'transition':'1s', 'opacity':'1'});
+    $('.frame-B, .frame-progressBar, .frame-sliders').css({'transition':'1s', 'opacity':'1'});
 
 }

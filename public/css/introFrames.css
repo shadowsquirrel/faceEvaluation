@@ -1,0 +1,48 @@
+@-ms-viewport
+{
+    width: device-width ;
+}
+html,body
+{
+    height:100%;
+    overflow-x: hidden;
+}
+body {
+    position: relative;
+    transform-origin: top left;
+}
+
+.space
+{
+    display:block;
+    margin-top:5vh;
+}
+
+.bb
+{
+    font-weight:500;
+}
+
+/*-------- PICTURE ---------*/
+.infoMaterial
+{
+
+}
+
+.frame-picture
+{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+}
+.facePicture
+{
+    height:36vh;
+}
+.wordWrap
+{
+    display:inline-block;
+    width:45vh;
+    font-size:5vh;
+    font-style:italic;
+}

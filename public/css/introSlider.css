@@ -24,8 +24,9 @@
     font-weight: 500;
     opacity: 1;
     color: black;
-    font-size: 5vw;
-    margin-bottom: -3vh;
+    font-size: 9vw;
+    /* margin-bottom: -3vh; */
+    text-align: center;
 }
 .sliderBar
 {
@@ -43,7 +44,7 @@
     appearance: none;
     opacity: 1;
     transition: 0.35s;
-    width: 302px!Important;
+    width: 251px!Important;
     background: transparent;
     margin-top: 35px;
     margin-left: -1px;

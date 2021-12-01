@@ -20,7 +20,7 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
 
    // Modify the stager to skip one stage.
    stager.skip('instructions');
-   // stager.skip('evaluation');
+   stager.skip('evaluation');
    // stager.skip('survey');
    // stager.skip('end');
 
