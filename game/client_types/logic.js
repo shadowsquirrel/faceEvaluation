@@ -27,15 +27,15 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
 
         // Identifies the player in the console
         node.game.showPlayer = function(player) {
-            console.log();
-            console.log('Player ' + player.count);
+            // console.log();
+            // console.log('Player ' + player.count);
         };
 
         // Enables logging to console from player.js
         node.on.data('debug', function(msg) {
             let player = node.game.pl.get(msg.from);
             node.game.showPlayer(player);
-            console.log(msg.data);
+            // console.log(msg.data);
         });
 
         // --------------------------------- //
@@ -57,16 +57,16 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
 
                 player.evalRound = 0;
 
-                console.log('PLAYER ' + player.id +
-                'IS INITIATED!');
-                console.log(player.pictureIndexOrder);
+                // console.log('PLAYER ' + player.id +
+                // 'IS INITIATED!');
+                // console.log(player.pictureIndexOrder);
 
                 player.initiated = true;
 
 
             } else {
 
-                console.log('Player is ALREADY initiated !!!');
+                // console.log('Player is ALREADY initiated !!!');
 
             }
 
@@ -74,7 +74,7 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
 
         node.on.data('initPlayer', function(msg) {
 
-            console.log('LOGIC: PLAYER INITIATION REQUESTED');
+            // console.log('LOGIC: PLAYER INITIATION REQUESTED');
 
             let player = node.game.pl.get(msg.from);
 
@@ -97,7 +97,7 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
                 currentRound: player.evalRound
             }
 
-            console.log(data);
+            // console.log(data);
 
             node.say('LOGIC-nextPicture', player.id, data);
 
@@ -144,20 +144,20 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
 
         node.game.disconnected.oguzAtay = function(player) {
 
-            console.log();
-            console.log();
-            console.log(' --- Player ' + player.id + ' is disconnected ---');
-            console.log(' --- Disconnected player\'s count is ' + player.count + ' ---');
-            console.log();
-            console.log(' --- Disconnected player\'s info in logic data base ---');
-            console.log(' -- picture index order -- ');
-            console.log(player.pictureIndexOrder);
-            console.log(' -- is initiated-- ');
-            console.log(player.initiated);
-            console.log(' -- evaluation round -- ');
-            console.log(player.evalRound);
-            console.log();
-            console.log();
+            // console.log();
+            // console.log();
+            // console.log(' --- Player ' + player.id + ' is disconnected ---');
+            // console.log(' --- Disconnected player\'s count is ' + player.count + ' ---');
+            // console.log();
+            // console.log(' --- Disconnected player\'s info in logic data base ---');
+            // console.log(' -- picture index order -- ');
+            // console.log(player.pictureIndexOrder);
+            // console.log(' -- is initiated-- ');
+            // console.log(player.initiated);
+            // console.log(' -- evaluation round -- ');
+            // console.log(player.evalRound);
+            // console.log();
+            // console.log();
 
         }
 
@@ -176,20 +176,20 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
 
         node.game.disconnected.reIntroduce = function(player) {
 
-            console.log();
-            console.log();
-            console.log(' --- Player ' + player.id + ' is reconnected ---');
-            console.log(' --- Reconnected player\'s count is ' + player.count + ' ---');
-            console.log();
-            console.log(' --- Reconnected player\'s info in logic data base ---');
-            console.log(' -- picture index order -- ');
-            console.log(player.pictureIndexOrder);
-            console.log(' -- is initiated-- ');
-            console.log(player.initiated);
-            console.log(' -- evaluation round -- ');
-            console.log(player.evalRound);
-            console.log();
-            console.log();
+            // console.log();
+            // console.log();
+            // console.log(' --- Player ' + player.id + ' is reconnected ---');
+            // console.log(' --- Reconnected player\'s count is ' + player.count + ' ---');
+            // console.log();
+            // console.log(' --- Reconnected player\'s info in logic data base ---');
+            // console.log(' -- picture index order -- ');
+            // console.log(player.pictureIndexOrder);
+            // console.log(' -- is initiated-- ');
+            // console.log(player.initiated);
+            // console.log(' -- evaluation round -- ');
+            // console.log(player.evalRound);
+            // console.log();
+            // console.log();
 
             // disconnected before evaluating the previous round
             // so we go back to the previous round
@@ -219,11 +219,11 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
 
         reconnect: function(player, reconOpts) {
 
-            console.log();
-            console.log();
-            console.log('--------- INSIDE RECONNECT OPT -----------');
-            console.log();
-            console.log();
+            // console.log();
+            // console.log();
+            // console.log('--------- INSIDE RECONNECT OPT -----------');
+            // console.log();
+            // console.log();
 
             node.game.disconnected.reIntroduce(player);
 
@@ -231,7 +231,7 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
 
         init: function() {
 
-            console.log(' ---- EVALUATION STAGE ----- ');
+            // console.log(' ---- EVALUATION STAGE ----- ');
 
         },
 

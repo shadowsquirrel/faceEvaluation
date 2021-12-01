@@ -38,10 +38,10 @@ window.onload = function() {
 
     node.on('HTML-receiveCurrentPicture', function(msg) {
 
-        console.log('');
-        console.log('CURREN PICTURE INDEX RECEIVED FROM CLIENT');
-        console.log(msg);
-        console.log('');
+        // console.log('');
+        // console.log('CURREN PICTURE INDEX RECEIVED FROM CLIENT');
+        // console.log(msg);
+        // console.log('');
 
         let currentPicture = msg.currentFaceIndex;
         let currentRound = msg.currentRound;
@@ -78,7 +78,7 @@ window.onload = function() {
 
     $('#submitButton').click(function() {
 
-        console.log(decision);
+        // console.log(decision);
 
         node.emit('HTML-reportEvaluation', decision);
 

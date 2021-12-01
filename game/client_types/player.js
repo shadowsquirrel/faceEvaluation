@@ -74,7 +74,7 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
         // response from LOGIC is received at the below LOGIC-nextPicture listener
         node.on('HTML-requestCurrentPicture', function() {
 
-            this.talk('CLIENT: HTML REQUESTING PLAYER DATA');
+            // this.talk('CLIENT: HTML REQUESTING PLAYER DATA');
 
             // -------------------------------------------- //
             // -----------  CLIENT --> LOGIC  ------------- //
@@ -86,8 +86,8 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
         // node.done the evaluation of the current picture
         node.on('HTML-reportEvaluation', function(msg) {
 
-            node.game.talk('CLIENT SIDE: DECISION DATA IS RECEIVED FROM HTML')
-            node.game.talk(msg)
+            // node.game.talk('CLIENT SIDE: DECISION DATA IS RECEIVED FROM HTML')
+            // node.game.talk(msg)
 
             node.done({
                 index: msg.pIndex,
@@ -103,11 +103,11 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
 
         node.on('HTML-reportSurveyResults', function(msg) {
 
-            this.talk('CLIENT: SURVEY RESULTS RECEIVED')
-            this.talk(msg.age);
-            this.talk(msg.gender);
-            this.talk(msg.race);
-            this.talk('----------------')
+            // this.talk('CLIENT: SURVEY RESULTS RECEIVED')
+            // this.talk(msg.age);
+            // this.talk(msg.gender);
+            // this.talk(msg.race);
+            // this.talk('----------------')
 
             // -------------------------------------------- //
             // -----------  CLIENT --> LOGIC  ------------- //
@@ -123,7 +123,7 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
 
         node.on('HTML-finishIntro', function() {
 
-            this.talk('DONE WITH TUTORIAL');
+            // this.talk('DONE WITH TUTORIAL');
 
             node.done();
 
@@ -139,9 +139,9 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
         // logic sends the facial image index to here which is passed to html
         node.on.data('LOGIC-nextPicture', function(msg) {
 
-            node.game.talk('inside LOGIC-nextPicture');
-            node.game.talk('INDEX RECEIVED: ');
-            node.game.talk(msg.data);
+            // node.game.talk('inside LOGIC-nextPicture');
+            // node.game.talk('INDEX RECEIVED: ');
+            // node.game.talk(msg.data);
 
             node.emit('HTML-receiveCurrentPicture', msg.data);
 
@@ -177,7 +177,7 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
         frame: 'finalScreen.htm',
         cb: function() {
             setTimeout(()=>{
-                this.talk('END THE EXPERIMENT')
+                // this.talk('END THE EXPERIMENT')
                 node.done();
             }, 30000)
         }

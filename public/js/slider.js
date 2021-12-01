@@ -130,7 +130,7 @@ slider.attract.oninput = function() {
     slider.bar(val, 'attractBar');
 
     // update slider activated switch
-    console.log('attract slider is changed');
+    // console.log('attract slider is changed');
     slider.activatedList[0] = 1;
     slider.showButton();
 
@@ -145,7 +145,7 @@ slider.intel.oninput = function() {
     // update bar plot
     slider.bar(val, 'intelBar');
 
-    console.log('intel slider is changed');
+    // console.log('intel slider is changed');
     slider.activatedList[1] = 1;
     slider.showButton();
 
@@ -160,7 +160,7 @@ slider.comp.oninput = function() {
     // update bar plot
     slider.bar(val, 'compBar');
 
-    console.log('comp slider is changed');
+    // console.log('comp slider is changed');
     slider.activatedList[2] = 1;
     slider.showButton();
 
@@ -175,7 +175,7 @@ slider.friend.oninput = function() {
     // update bar plot
     slider.bar(val, 'friendBar');
 
-    console.log('friend slider is changed');
+    // console.log('friend slider is changed');
     slider.activatedList[3] = 1;
     slider.showButton();
 
@@ -190,7 +190,7 @@ slider.like.oninput = function() {
     // update bar plot
     slider.bar(val, 'likeBar');
 
-    console.log('like slider is changed');
+    // console.log('like slider is changed');
     slider.activatedList[4] = 1;
     slider.showButton();
 

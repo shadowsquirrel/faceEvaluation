@@ -10,5 +10,5 @@ myFrame.getHeight = function() {
 
 myFrame.test = function() {
 
-    console.log('what the fucking fuck');
+    // console.log('what the fucking fuck');
 }

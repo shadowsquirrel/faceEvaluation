@@ -37,8 +37,8 @@ question.first = function() {
 
     question.active = order.active[order.index];
 
-    console.log('');
-    console.log('active question is: ' + question.active);
+    // console.log('');
+    // console.log('active question is: ' + question.active);
 
     // here age is arbitrary it can also be empty string
     question.switch('age', question.active);
@@ -57,22 +57,22 @@ question.next = function() {
         question.previous = question.active;
         question.active = order.active[order.index];
 
-        console.log('');
-        console.log('active question is: ' + question.active);
-        console.log('order.index: ' + order.index);
+        // console.log('');
+        // console.log('active question is: ' + question.active);
+        // console.log('order.index: ' + order.index);
 
         question.switch(question.previous, question.active);
 
 
     } else {
 
-        console.log('');
-        console.log('');
-        console.log('No more question to ask -> order.index: ' + order.index);
-        console.log('');
-        console.log('decisions made:')
-        console.log(decision);;
-        console.log('');
+        // console.log('');
+        // console.log('');
+        // console.log('No more question to ask -> order.index: ' + order.index);
+        // console.log('');
+        // console.log('decisions made:')
+        // console.log(decision);;
+        // console.log('');
 
         decision.save();
 
@@ -149,8 +149,8 @@ progressBar.update = function() {
 
 experiment.generate = function() {
 
-    console.log('generating survey');
-    console.log('');
+    // console.log('generating survey');
+    // console.log('');
 
     order.index = 0;
 
@@ -169,8 +169,8 @@ experiment.generate = function() {
         $('.container').css({'transition':'1s', 'opacity':'1'});
     }, 500)
 
-    console.log('order index: ' + order.index);
-    console.log('for question order: ' + order.active);
+    // console.log('order index: ' + order.index);
+    // console.log('for question order: ' + order.active);
 
     question.first();
 

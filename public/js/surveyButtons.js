@@ -10,11 +10,11 @@ genderDecisionList.forEach(i => {
 
         var index = genderDecisionList.indexOf(i);
 
-        console.log('gender index: ' + index);
+        // console.log('gender index: ' + index);
 
         decision.gender = index;
 
-        console.log('gender decision: ' + decision.gender);
+        // console.log('gender decision: ' + decision.gender);
 
         question.next();
 
@@ -36,11 +36,11 @@ ageDecisionList.forEach(i => {
 
         var index = ageDecisionList.indexOf(i);
 
-        console.log('age index: ' + index);
+        // console.log('age index: ' + index);
 
         decision.age = index;
 
-        console.log('age decision: ' + decision.age);
+        // console.log('age decision: ' + decision.age);
 
         question.next();
 
@@ -63,11 +63,11 @@ raceDecisionList.forEach(i => {
 
         var index = raceDecisionList.indexOf(i);
 
-        console.log('race index: ' + index);
+        // console.log('race index: ' + index);
 
         decision.race = index;
 
-        console.log('race decision: ' + decision.race);
+        // console.log('race decision: ' + decision.race);
 
         question.next();
 
