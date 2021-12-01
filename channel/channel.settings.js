@@ -37,7 +37,10 @@ module.exports = {
      *
      * Default: the name of the game, as found in the package.json file.
      */
-    name: 'Experiment',
+
+     // SETTING THIS UP CREATES AN ERROR MY GUESS IS THE NAME HERE NEEDS TO MATCH
+     // THE NAME IN PACKAGE.JSON -> HAVEN'T FOUND ANYTHING ABOUT THIS IN WIKI
+    // name: 'Experiment',
 
     /**
      * ## alias (string|array) Optional
