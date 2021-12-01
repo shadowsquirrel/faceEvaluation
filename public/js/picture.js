@@ -2,7 +2,7 @@ let picture = {};
 
 picture.set = function(index) {
 
-    var myString = 'images/';
+    var myString = 'faceImages/';
 
     var source = myString + index + '.jpg';
 
