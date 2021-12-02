@@ -62,7 +62,7 @@ body {
 .facePicture
 {
     /* height:36vh; */
-    height: 55em;
+    height: 45em;
     /* margin-top: -3em; */
 }
 
@@ -92,6 +92,7 @@ body {
     padding-left: 0vh;
     padding-right: 0vh;
     padding-top:10em;
+    padding-bottom:20em;
 }
 
 /*--------- BUTTON ---------*/
