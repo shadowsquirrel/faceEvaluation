@@ -20,7 +20,7 @@ and (orientation: portrait)
     .sliderWrapWrap
     {
         margin-top:5em;
-        margin-bottom:9em;
+        margin-bottom:5em;
         transform:scaleY(2) scaleX(2.2);
     }
     .sliderText
@@ -111,7 +111,7 @@ and (device-width : 1024px)
     .sliderWrapWrap
     {
         margin-top:5em;
-        margin-bottom:9em;
+        margin-bottom:5em;
         transform:scaleY(2) scaleX(2.2);
     }
     .sliderText
@@ -133,7 +133,7 @@ and (device-width : 1024px)
     .submitButton
     {
         height:auto;
-        font-size:6em;
+        font-size:11em;
         text-align:center;
         padding-bottom:0em;
     }
@@ -213,7 +213,7 @@ and (orientation: landscape)
     .sliderWrapWrap
     {
         margin-top:5em;
-        margin-bottom:9em;
+        margin-bottom:5em;
         transform:scaleY(2) scaleX(2.2);
     }
     .sliderText
@@ -235,7 +235,7 @@ and (orientation: landscape)
     .submitButton
     {
         height:auto;
-        font-size:6em;
+        font-size:11em;
         text-align:center;
         padding-bottom:0em;
     }

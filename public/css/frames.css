@@ -88,8 +88,9 @@ body {
     flex:auto;
     flex-direction: column;;
     justify-content: center;
-    padding-left: 7vh;
-    padding-right: 7vh;
+    padding-left: 0vh;
+    padding-right: 0vh;
+    padding-top:10vh;
 }
 
 /*--------- BUTTON ---------*/
@@ -107,7 +108,8 @@ body {
     cursor:pointer;
     border:solid 2px black;
     color:white;
-    font-size:25px;
+    /* font-size:25px; */
+    font-size:11em;
     font-weight:800;
 }
 .submitButton:hover

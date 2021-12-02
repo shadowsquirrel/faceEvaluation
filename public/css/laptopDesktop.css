@@ -14,6 +14,10 @@ and (min-width : 1280px)
         width:50%;
         margin-left:25%;
     }
+    .frame-picture
+    {
+        margin-top:3%;
+    }
     .facePicture
     {
         height:70em;
@@ -40,8 +44,8 @@ and (min-width : 1280px)
     }
     .frame-button
     {
-        padding-left:15%;
-        padding-right:15%;
+        /* padding-left:15%; */
+        /* padding-right:15%; */
         padding-top:3em;
         padding-bottom:3em;
         margin-top:1em;
@@ -51,6 +55,7 @@ and (min-width : 1280px)
     {
         height:auto;
         padding-bottom:0em;
+        font-size:6em;
     }
 }
 
@@ -257,7 +262,7 @@ and (device-width : 1024px)
     .submitButton
     {
         height:auto;
-        font-size:6em;
+        font-size:11em;
         text-align:center;
         padding-bottom:0em;
     }

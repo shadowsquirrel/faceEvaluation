@@ -44,11 +44,11 @@
     appearance: none;
     opacity: 1;
     transition: 0.35s;
-    width: 251px!Important;
+    width: 300px!Important;
     background: transparent;
-    margin-top: 35px;
-    margin-left: -1px;
-    height: 5px;
+    margin-top: 28px;
+    margin-left: 0px;
+    height: 4px;
 }
 .bar
 {
@@ -64,12 +64,13 @@
     opacity: 1;
     /* opacity: 1; */
     transition: 0.35s;
-    width: 4px;
+    width: 45px;
     background: #85ddff;
     /* background: #565656; */
-    height: 31px;
-    margin-top: -5px;
-
+    height: 60px;
+    margin-top: -2px;
+    border-radius:10px;
+    margin-left:-1px;
 }
 .slider::-moz-range-thumb
 {
@@ -80,9 +81,10 @@
     opacity: 1;
     /* opacity: 1; */
     transition: 0.35s;
-    width: 4px;
+    width: 45px;
     background: #85ddff;
     /* background: #565656; */
-    height: 31px;
+    height: 60px;
     margin-top: -5px;
+    border-radius:20px;
 }

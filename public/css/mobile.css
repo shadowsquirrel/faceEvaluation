@@ -50,7 +50,7 @@ and (max-device-height: 926px)
     .submitButton
     {
         height:auto;
-        font-size:6em;
+        font-size:11em;
         text-align:center;
         padding-bottom:0em;
     }
@@ -219,7 +219,7 @@ AND (max-device-height: 428px)
     .submitButton
     {
         height:auto;
-        font-size:6em;
+        font-size:11em;
         text-align:center;
         padding-bottom:0em;
     }
