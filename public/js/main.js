@@ -6,20 +6,44 @@
 
 window.onload = function() {
 
-    myFrame.test();
-    myFrame.test();
-    myFrame.getHeight();
-    myFrame.test();
-    myFrame.test();
-
     var node = parent.node;
+
+    // ---------------------- //
+    // ------- PICTURE ------ //
+    // ---------------------- //
+
+    var picture = {};
+
+    picture.set = function(index) {
+
+        var myString = 'faceImages/';
+
+        var source = myString + index + '.jpg';
+
+        $('#fP').attr('src', source);
+
+    }
+
+
+    var show = {};
+
+    show.picture = function() {
+
+        $('.frame-picture').css({'transition':'1s', 'opacity':'1'});
+
+    }
+
+    show.sliders = function() {
+
+        $('.frame-B, .frame-progressBar, .frame-sliders').css({'transition':'1s', 'opacity':'1'});
+
+    }
 
     // ---------------------- //
     // ---- PROGRESS BAR ---- //
     // ---------------------- //
 
     updateProgressBar = function(index) {
-
 
         var pp = ( index / 20 ) * 100;
 
@@ -43,8 +67,8 @@ window.onload = function() {
         // console.log(msg);
         // console.log('');
 
-        let currentPicture = msg.currentFaceIndex;
-        let currentRound = msg.currentRound;
+        var currentPicture = msg.currentFaceIndex;
+        var currentRound = msg.currentRound;
 
         decision.pIndex = currentPicture;
 
@@ -65,8 +89,6 @@ window.onload = function() {
     node.emit('HTML-requestCurrentPicture');
 
 
-    // picture.set(currentPicture);
-
     setTimeout(()=>{
         show.picture();
     }, 500)
@@ -77,8 +99,6 @@ window.onload = function() {
 
 
     $('#submitButton').click(function() {
-
-        // console.log(decision);
 
         node.emit('HTML-reportEvaluation', decision);
 

@@ -235,7 +235,7 @@ and (device-width : 1024px)
     }
     .facePicture
     {
-        margin-top:-3em;
+        /* margin-top:-3em; */
     }
     .sliderWrapWrap
     {

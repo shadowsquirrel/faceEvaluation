@@ -15,7 +15,7 @@ and (orientation: portrait)
 
     .facePicture
     {
-        margin-top:-6em;
+        /* margin-top:-6em; */
     }
     .sliderWrapWrap
     {
@@ -106,7 +106,7 @@ and (device-width : 1024px)
 {
     .facePicture
     {
-        margin-top:-3em;
+        /* margin-top:-3em; */
     }
     .sliderWrapWrap
     {
@@ -208,7 +208,7 @@ and (orientation: landscape)
     }
     .facePicture
     {
-        margin-top:-6em;
+        /* margin-top:-6em; */
     }
     .sliderWrapWrap
     {
