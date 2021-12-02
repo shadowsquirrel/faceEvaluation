@@ -10,7 +10,7 @@ window.onload = function() {
 
 
     var slider = {};
-    
+
     slider.bar = function(val, id) {
 
         var y = val;
@@ -45,12 +45,12 @@ window.onload = function() {
             },
             text: [val],
             textfont: {
-                size: '0',
-                color:'transparent',
+                size: '30',
+                color:'white',
             },
             orientation: 'h',
-            // textanchor: 'right',
-            textposition: myTextPos,
+            insidetextanchor: 'middle',
+            textposition: 'inside',
         }];
 
 
@@ -60,9 +60,9 @@ window.onload = function() {
             paper_bgcolor: 'white',
             // paper_bgcolor: 'white',
             barmode: 'group',
-            height: 50,
-            width: 300,
-            margin: {"t": 20, "b": 0, "l": 25, "r": 27},
+            height: 60,
+            width: 350,
+            margin: {"t": 0, "b": 0, "l": 25, "r": 27},
             xaxis: {
                 side: 'top',
                 fixedrange: true,
@@ -70,13 +70,13 @@ window.onload = function() {
                 range: myRange,
                 layer: 'below traces',
                 tickfont: {
-                    size: 15,
-                    color:'black',
+                    size: 0,
+                    color:'transparent',
                 },
-                tickmode: 'array',
-                tickvals: myTickVal,
-                ticktext: myTickText,
-                tickangle: 0,
+                // tickmode: 'array',
+                // tickvals: myTickVal,
+                // ticktext: myTickText,
+                // tickangle: 0,
                 ticks:'',
                 showline: false,
                 showgrid: axisOn,
