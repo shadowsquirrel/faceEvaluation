@@ -28,7 +28,7 @@ and (max-device-height: 926px)
     .sliderWrapWrap
     {
         margin-top:5em;
-        margin-bottom:9em;
+        margin-bottom:10em;
         transform:scaleY(2) scaleX(2.2);
     }
     .sliderText
@@ -197,7 +197,7 @@ AND (max-device-height: 428px)
     .sliderWrapWrap
     {
         margin-top:5em;
-        margin-bottom:9em;
+        margin-bottom:10em;
         transform:scaleY(2) scaleX(2.2);
     }
     .sliderText

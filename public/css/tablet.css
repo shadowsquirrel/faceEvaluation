@@ -20,7 +20,7 @@ and (orientation: portrait)
     .sliderWrapWrap
     {
         margin-top:5em;
-        margin-bottom:5em;
+        margin-bottom:10em;
         transform:scaleY(2) scaleX(2.2);
     }
     .sliderText
@@ -111,7 +111,7 @@ and (device-width : 1024px)
     .sliderWrapWrap
     {
         margin-top:5em;
-        margin-bottom:5em;
+        margin-bottom:10em;
         transform:scaleY(2) scaleX(2.2);
     }
     .sliderText
@@ -213,7 +213,7 @@ and (orientation: landscape)
     .sliderWrapWrap
     {
         margin-top:5em;
-        margin-bottom:5em;
+        margin-bottom:10em;
         transform:scaleY(2) scaleX(2.2);
     }
     .sliderText
