@@ -6,6 +6,11 @@ and (max-device-height: 568px)
 and (orientation : landscape)
 and (-webkit-device-pixel-ratio: 2){
 
+    .frame-InfoBoxWrap
+    {
+        transform-origin: top;
+        transform:scale(0.85);
+    }
     .sliderText
     {
         font-size:6vh;
@@ -15,7 +20,11 @@ and (-webkit-device-pixel-ratio: 2){
 @media only screen and (device-width: 320px)
 and (device-height: 568px)
 {
-
+    .frame-InfoBoxWrap
+    {
+        transform-origin: top;
+        transform:scale(0.85);
+    }
     .sliderBar
     {
         transform-origin: top;
@@ -40,7 +49,11 @@ and (device-height: 568px)
 @media only screen and (device-width: 375px)
 and (device-height: 667px)
 {
-
+    .frame-InfoBoxWrap
+    {
+        transform-origin: top;
+        transform:scale(0.85);
+    }
     .sliderBar
     {
         transform-origin: top;
@@ -63,6 +76,11 @@ and (device-height: 667px)
 and (device-height: 375px)
 and (orientation : landscape)
 and (-webkit-device-pixel-ratio: 2){
+    .frame-InfoBoxWrap
+    {
+        transform-origin: top;
+        transform:scale(0.85);
+    }
     .sliderText
     {
         font-size:6vh;
@@ -74,7 +92,11 @@ and (max-device-height: 667px)
 and (orientation : portrait)
 and (-webkit-device-pixel-ratio: 2){
     /* Styles */
-
+    .frame-InfoBoxWrap
+    {
+        transform-origin: top;
+        transform:scale(0.85);
+    }
 }
 
 
@@ -85,6 +107,11 @@ and (-webkit-device-pixel-ratio: 2){
 and (max-device-height: 736px)
 and (orientation : landscape)
 and (-webkit-device-pixel-ratio: 3){
+    .frame-InfoBoxWrap
+    {
+        transform-origin: top;
+        transform:scale(0.85);
+    }
     .sliderText
     {
         font-size:6vh;
@@ -94,6 +121,11 @@ and (-webkit-device-pixel-ratio: 3){
 @media only screen and (device-width: 414px)
 and (device-height: 736px)
 {
+    .frame-InfoBoxWrap
+    {
+        transform-origin: top;
+        transform:scale(0.85);
+    }
     .sliderBar
     {
         transform-origin: top;
@@ -109,6 +141,11 @@ and (device-height: 736px)
 and (device-height: 812px)
 and (orientation : landscape)
 and (-webkit-device-pixel-ratio: 3){
+    .frame-InfoBoxWrap
+    {
+        transform-origin: top;
+        transform:scale(0.85);
+    }
     .sliderText
     {
         font-size:6vh;
@@ -118,6 +155,11 @@ and (-webkit-device-pixel-ratio: 3){
 @media only screen and (device-width: 375px)
 and (device-height: 812px)
 {
+    .frame-InfoBoxWrap
+    {
+        transform-origin: top;
+        transform:scale(0.85);
+    }
     .sliderBar
     {
         transform-origin: top;
@@ -133,6 +175,11 @@ and (device-height: 812px)
 and (device-height: 896px)
 and (orientation : landscape)
 {
+    .frame-InfoBoxWrap
+    {
+        transform-origin: top;
+        transform:scale(0.85);
+    }
     .sliderText
     {
         font-size:6vh;
@@ -142,6 +189,11 @@ and (orientation : landscape)
 @media only screen and (device-width: 414px)
 and (device-height: 896px)
 {
+    .frame-InfoBoxWrap
+    {
+        transform-origin: top;
+        transform:scale(0.85);
+    }
     .sliderBar
     {
         transform-origin: top;
@@ -157,6 +209,11 @@ and (device-height: 896px)
 and (device-height: 640px)
 and (orientation : landscape)
 {
+    .frame-InfoBoxWrap
+    {
+        transform-origin: top;
+        transform:scale(0.85);
+    }
     .sliderText
     {
         font-size:6vh;
@@ -166,6 +223,11 @@ and (orientation : landscape)
 @media only screen and (device-width: 320px)
 and (device-height: 640px)
 {
+    .frame-InfoBoxWrap
+    {
+        transform-origin: top;
+        transform:scale(0.85);
+    }
     .sliderBar
     {
         transform-origin: top;
@@ -189,6 +251,11 @@ and (device-height: 640px)
 and (max-device-height: 640px)
 and (orientation : landscape)
 {
+    .frame-InfoBoxWrap
+    {
+        transform-origin: top;
+        transform:scale(0.85);
+    }
     .sliderText
     {
         font-size:6vh;
@@ -210,6 +277,11 @@ and (orientation : landscape)
 @media only screen and (device-width: 360px)
 and (device-height: 640px)
 {
+    .frame-InfoBoxWrap
+    {
+        transform-origin: top;
+        transform:scale(0.85);
+    }
     .sliderBar
     {
         transform-origin: top;
@@ -224,6 +296,11 @@ and (device-height: 640px)
 @media only screen and (device-width: 411px)
 and (device-height: 731px)
 {
+    .frame-InfoBoxWrap
+    {
+        transform-origin: top;
+        transform:scale(0.85);
+    }
     .sliderBar
     {
         transform-origin: top;
@@ -243,6 +320,11 @@ and (device-height: 731px)
 @media only screen and (device-width: 411px)
 and (device-height: 823px)
 {
+    .frame-InfoBoxWrap
+    {
+        transform-origin: top;
+        transform:scale(0.85);
+    }
     .sliderBar
     {
         transform-origin: top;
@@ -257,6 +339,11 @@ and (device-height: 823px)
 and (device-width : 1024px)
 and (device-height : 768px)
 {
+    .frame-InfoBoxWrap
+    {
+        transform-origin: top;
+        transform:scale(0.85);
+    }
     .sliderText
     {
         font-size:6vh;
@@ -284,6 +371,11 @@ and (device-height : 768px)
 and (device-width : 768px)
 and (device-height : 1024px)
 and (orientation : portrait) {
+    .frame-InfoBoxWrap
+    {
+        transform-origin: top;
+        transform:scale(0.85);
+    }
     .sliderText
     {
         font-size:3vh;

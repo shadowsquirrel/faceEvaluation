@@ -20,7 +20,7 @@ and (max-device-height: 926px)
     {
         margin-top:7%;
         transform-origin: top;
-        transform:scale(1.2);
+        transform:scale(1);
     }
     .questionIndexText
     {

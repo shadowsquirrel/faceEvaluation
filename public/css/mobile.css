@@ -12,6 +12,15 @@ and (max-device-width: 428px)
 and (max-device-height: 926px)
 {
 
+    .frame-AB
+    {
+        transform-origin: top;
+        transform:scale(0.85);
+    }
+    .frame-progressBar
+    {
+        margin-bottom:5%;
+    }
     .facePicture
     {
         margin-top:-6em;
