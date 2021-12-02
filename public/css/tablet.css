@@ -204,7 +204,7 @@ and (orientation: landscape)
     }
     .frame-progressBar
     {
-        margin-bottom:5%;
+        /* margin-bottom:5%; */
     }
     .facePicture
     {

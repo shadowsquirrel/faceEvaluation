@@ -231,7 +231,7 @@ and (device-width : 1024px)
     }
     .frame-progressBar
     {
-        margin-bottom:5%;
+        /* margin-bottom:5%; */
     }
     .facePicture
     {
@@ -288,7 +288,7 @@ and (device-width : 1366px)
     }
     .frame-progressBar
     {
-        margin-bottom:5%;
+        /* margin-bottom:5%; */
     }
     .frame-B
     {
