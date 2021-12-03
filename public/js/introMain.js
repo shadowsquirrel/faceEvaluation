@@ -9,6 +9,47 @@ window.onload = function() {
     })
 
 
+    var arrow = {}
+
+    arrow.wiggleOnList = [1,1,1,1,1];
+
+    arrow.wiggle3 = function(state) {
+
+        if(arrow.wiggleOnList[3]) {
+
+            if(state === 0) {
+
+                $('.pointer-3').css({'transition':'1s', 'margin-left':'-7%'});
+
+                setTimeout(()=>{
+                    arrow.wiggle3(1);
+                }, 600)
+
+            }
+
+            if(state === 1) {
+
+                $('.pointer-3').css({'transition':'1s', 'margin-left':'-1%'});
+
+                setTimeout(()=>{
+                    arrow.wiggle3(0);
+                }, 600)
+
+            }
+
+        } else {
+
+            $('.pointer-3').css({'transition':'0.3s', 'opacity':'0', 'transform':'scale(0)'});
+            setTimeout(()=>{
+                $('.pointer-3').css({'display':'none'});
+            }, 300)
+
+        }
+
+    }
+
+    // ----------------------- //
+
     var slider = {};
 
     slider.bar = function(val, id) {
@@ -105,6 +146,8 @@ window.onload = function() {
         // get the value from the slider
         var val = parseFloat(slider.attract.value);
 
+        arrow.wiggleOnList[3] = false;
+
         // update bar plot
         slider.bar(val, 'attractBar');
 
@@ -112,5 +155,7 @@ window.onload = function() {
 
 
     slider.bar(0, 'attractBar');
+
+    arrow.wiggle3(0);
 
 }

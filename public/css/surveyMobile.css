@@ -24,7 +24,7 @@ and (max-device-height: 926px)
     }
     .questionIndexText
     {
-        font-size:10em;
+        font-size:6em;
     }
     .question
     {
@@ -196,7 +196,7 @@ AND (max-device-height: 428px)
     }
     .questionIndexText
     {
-        font-size:10em;
+        font-size:6em;
     }
     .question
     {

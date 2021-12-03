@@ -30,12 +30,12 @@ and (min-width : 1280px)
     }
     .sliderWrapWrap
     {
-        margin-bottom:7em;
+        margin-bottom:24%;
         margin-top:0em;
     }
     .sliderText
     {
-        margin-bottom:0em;
+        margin-bottom:6%;
         font-size:4em;
     }
     .sliderBar
@@ -240,13 +240,15 @@ and (device-width : 1024px)
     .sliderWrapWrap
     {
         margin-top:5em;
-        margin-bottom:10em;
+        /* margin-bottom:10em; */
+        margin-bottom:24%;
         transform:scaleY(2) scaleX(2.2);
     }
     .sliderText
     {
         font-size:2.5em;
-        margin-bottom:-0.5em;
+        /* margin-bottom:-0.5em; */
+        margin-bottom:6%;
     }
     .frame-sliders
     {
@@ -298,12 +300,14 @@ and (device-width : 1366px)
     .sliderWrapWrap
     {
         margin-top:6em;
-        margin-bottom:16em;
+        /* margin-bottom:16em; */
+        margin-bottom:24%;
         transform:scaleY(2) scaleX(2.2);
     }
     .sliderText
     {
         font-size:3em;
+        margin-bottom:6%;
     }
     .submitButton
     {

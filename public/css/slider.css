@@ -65,6 +65,10 @@
     transition: 0.35s;
     width: 45px;
     background: #85ddff;
+    background-image: url(../extraImages/slider.png);
+    background-size:47px 74px;
+    background-position:center center;
+    background-repeat:no-repeat;
     /* background: #565656; */
     height: 80px;
     margin-top: -2px;
@@ -82,8 +86,21 @@
     transition: 0.35s;
     width: 45px;
     background: #85ddff;
+    background-image: url(../extraImages/slider.png);
+    background-size:47px 74px;
+    background-position:center center;
+    background-repeat:no-repeat;
     /* background: #565656; */
     height: 80px;
     margin-top: -5px;
     border-radius:20px;
+}
+.sliderPointer
+{
+    position: absolute;
+    z-index: 10;
+    height: 50%;
+    width: auto;
+    margin-left: -1%;
+    /* margin-left: -7%; */
 }

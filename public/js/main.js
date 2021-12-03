@@ -62,10 +62,10 @@ window.onload = function() {
 
     node.on('HTML-receiveCurrentPicture', function(msg) {
 
-        // console.log('');
-        // console.log('CURREN PICTURE INDEX RECEIVED FROM CLIENT');
-        // console.log(msg);
-        // console.log('');
+        console.log('');
+        console.log('CURREN PICTURE INDEX RECEIVED FROM CLIENT');
+        console.log(msg);
+        console.log('');
 
         var currentPicture = msg.currentFaceIndex;
         var currentRound = msg.currentRound;
@@ -83,6 +83,23 @@ window.onload = function() {
         setTimeout(()=>{
             show.sliders();
         }, 1500)
+
+
+        if(currentRound < 2) {
+
+            // ---- WIGGLE ACTION ---- //
+
+            arrow.wiggle0(0);
+            arrow.wiggle1(0);
+            arrow.wiggle2(0);
+            arrow.wiggle3(0);
+            arrow.wiggle4(0);
+
+        } else {
+
+            arrow.destroyAll();
+
+        }
 
     })
 
@@ -103,6 +120,11 @@ window.onload = function() {
         node.emit('HTML-reportEvaluation', decision);
 
     })
+
+
+
+
+
 
 
 }

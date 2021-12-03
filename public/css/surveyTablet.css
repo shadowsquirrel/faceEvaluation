@@ -82,7 +82,7 @@ and (device-width : 1024px)
     }
     .questionIndexText
     {
-        font-size:10em;
+        font-size:6em;
     }
     .question
     {
@@ -142,7 +142,7 @@ and (orientation: landscape)
     }
     .questionIndexText
     {
-        font-size:10em;
+        font-size:6em;
     }
     .question
     {

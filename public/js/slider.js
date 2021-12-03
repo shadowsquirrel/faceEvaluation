@@ -1,3 +1,200 @@
+// ------------------------- //
+// ------ WIGGLE ARROW ----- //
+// ------------------------- //
+
+var arrow = {}
+
+arrow.wiggleOnList = [1,1,1,1,1]
+
+arrow.wiggle0 = function(state) {
+
+    if(arrow.wiggleOnList[0]) {
+
+        if(state === 0) {
+
+            $('.pointer-0').css({'transition':'1s', 'margin-left':'-7%'});
+
+            setTimeout(()=>{
+                arrow.wiggle0(1);
+            }, 600)
+
+        }
+
+        if(state === 1) {
+
+            $('.pointer-0').css({'transition':'1s', 'margin-left':'-1%'});
+
+            setTimeout(()=>{
+                arrow.wiggle0(0);
+            }, 600)
+
+        }
+
+    } else {
+
+        $('.pointer-0').css({'transition':'0.3s', 'opacity':'0', 'transform':'scale(0)'});
+        setTimeout(()=>{
+            $('.pointer-0').css({'display':'none'});
+        }, 300)
+
+    }
+
+}
+
+arrow.wiggle1 = function(state) {
+
+    if(arrow.wiggleOnList[1]) {
+
+        if(state === 0) {
+
+            $('.pointer-1').css({'transition':'1s', 'margin-left':'-7%'});
+
+            setTimeout(()=>{
+                arrow.wiggle1(1);
+            }, 600)
+
+        }
+
+        if(state === 1) {
+
+            $('.pointer-1').css({'transition':'1s', 'margin-left':'-1%'});
+
+            setTimeout(()=>{
+                arrow.wiggle1(0);
+            }, 600)
+
+        }
+
+    } else {
+
+        $('.pointer-1').css({'transition':'0.3s', 'opacity':'0', 'transform':'scale(0)'});
+        setTimeout(()=>{
+            $('.pointer-1').css({'display':'none'});
+        }, 300)
+
+    }
+
+}
+
+arrow.wiggle2 = function(state) {
+
+    if(arrow.wiggleOnList[2]) {
+
+        if(state === 0) {
+
+            $('.pointer-2').css({'transition':'1s', 'margin-left':'-7%'});
+
+            setTimeout(()=>{
+                arrow.wiggle2(1);
+            }, 600)
+
+        }
+
+        if(state === 1) {
+
+            $('.pointer-2').css({'transition':'1s', 'margin-left':'-1%'});
+
+            setTimeout(()=>{
+                arrow.wiggle2(0);
+            }, 600)
+
+        }
+
+    } else {
+
+        $('.pointer-2').css({'transition':'0.3s', 'opacity':'0', 'transform':'scale(0)'});
+        setTimeout(()=>{
+            $('.pointer-2').css({'display':'none'});
+        }, 300)
+
+    }
+
+}
+
+arrow.wiggle3 = function(state) {
+
+    if(arrow.wiggleOnList[3]) {
+
+        if(state === 0) {
+
+            $('.pointer-3').css({'transition':'1s', 'margin-left':'-7%'});
+
+            setTimeout(()=>{
+                arrow.wiggle3(1);
+            }, 600)
+
+        }
+
+        if(state === 1) {
+
+            $('.pointer-3').css({'transition':'1s', 'margin-left':'-1%'});
+
+            setTimeout(()=>{
+                arrow.wiggle3(0);
+            }, 600)
+
+        }
+
+    } else {
+
+        $('.pointer-3').css({'transition':'0.3s', 'opacity':'0', 'transform':'scale(0)'});
+        setTimeout(()=>{
+            $('.pointer-3').css({'display':'none'});
+        }, 300)
+
+    }
+
+}
+
+arrow.wiggle4 = function(state) {
+
+    if(arrow.wiggleOnList[4]) {
+
+        if(state === 0) {
+
+            $('.pointer-4').css({'transition':'1s', 'margin-left':'-7%'});
+
+            setTimeout(()=>{
+                arrow.wiggle4(1);
+            }, 600)
+
+        }
+
+        if(state === 1) {
+
+            $('.pointer-4').css({'transition':'1s', 'margin-left':'-1%'});
+
+            setTimeout(()=>{
+                arrow.wiggle4(0);
+            }, 600)
+
+        }
+
+    } else {
+
+        $('.pointer-4').css({'transition':'0.3s', 'opacity':'0', 'transform':'scale(0)'});
+        setTimeout(()=>{
+            $('.pointer-4').css({'display':'none'});
+        }, 300)
+
+    }
+
+}
+
+arrow.destroyAll = function() {
+
+    $('.pointer-0').css({'display':'none'});
+    $('.pointer-1').css({'display':'none'});
+    $('.pointer-2').css({'display':'none'});
+    $('.pointer-3').css({'display':'none'});
+    $('.pointer-4').css({'display':'none'});
+
+}
+
+
+// ------------------------- //
+// -------- SLIDERS -------- //
+// ------------------------- //
 
 let slider = {};
 let decision = {
@@ -126,6 +323,8 @@ slider.attract.oninput = function() {
 
     decision.attract = val;
 
+    arrow.wiggleOnList[0] = false;
+
     // update bar plot
     slider.bar(val, 'attractBar');
 
@@ -142,6 +341,8 @@ slider.intel.oninput = function() {
 
     decision.intel = val;
 
+    arrow.wiggleOnList[1] = false;
+
     // update bar plot
     slider.bar(val, 'intelBar');
 
@@ -156,6 +357,8 @@ slider.comp.oninput = function() {
     var val = parseFloat(slider.comp.value);
 
     decision.comp = val;
+
+    arrow.wiggleOnList[2] = false;
 
     // update bar plot
     slider.bar(val, 'compBar');
@@ -172,6 +375,8 @@ slider.friend.oninput = function() {
 
     decision.friend = val;
 
+    arrow.wiggleOnList[3] = false;
+
     // update bar plot
     slider.bar(val, 'friendBar');
 
@@ -186,6 +391,8 @@ slider.like.oninput = function() {
     var val = parseFloat(slider.like.value);
 
     decision.like = val;
+
+    arrow.wiggleOnList[4] = false;
 
     // update bar plot
     slider.bar(val, 'likeBar');
