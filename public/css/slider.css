@@ -65,10 +65,10 @@
     transition: 0.35s;
     width: 45px;
     background: #85ddff;
-    background-image: url(../extraImages/slider.png);
+    /* background-image: url(../extraImages/slider.png);
     background-size:47px 74px;
     background-position:center center;
-    background-repeat:no-repeat;
+    background-repeat:no-repeat; */
     /* background: #565656; */
     height: 80px;
     margin-top: -2px;
