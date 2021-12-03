@@ -1,0 +1,16 @@
+/* -------------------------- */
+/* Desktops and laptops ----- */
+/* -------------------------- */
+@media only screen
+and (min-width : 1280px)
+{
+    .endMessage
+    {
+        /* background: blue; */
+        padding:4rem;
+        font-size: 5rem;
+        text-align: center;
+        font-weight:100;
+        margin-top:5%;
+    }
+}

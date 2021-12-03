@@ -9,7 +9,7 @@ html, body {
     height:100%;
     display:flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
 }
 .frame-main-row
 {
@@ -24,7 +24,8 @@ html, body {
 {
     /* background: blue; */
     padding:4rem;
-    font-size: 6rem;
+    font-size: 9rem;
     text-align: center;
     font-weight:100;
+    margin-top:5%;
 }

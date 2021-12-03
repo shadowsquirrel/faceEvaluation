@@ -18,7 +18,7 @@ and (max-device-height: 926px)
     }
     .frame-B
     {
-        margin-top:7%;
+        margin-top:0%;
         transform-origin: top;
         transform:scale(1);
     }
