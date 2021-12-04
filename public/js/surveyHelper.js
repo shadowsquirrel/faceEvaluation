@@ -30,6 +30,8 @@ main.transition = function() {
 // ---- QUESTION ---- //
 // ------------------ //
 
+question.otherActive = false;
+
 question.previous = undefined;
 question.active = undefined;
 
@@ -57,24 +59,36 @@ question.next = function() {
         question.previous = question.active;
         question.active = order.active[order.index];
 
-        // console.log('');
-        // console.log('active question is: ' + question.active);
-        // console.log('order.index: ' + order.index);
+        console.log('');
+        console.log('active question is: ' + question.active);
+        console.log('order.index: ' + order.index);
 
         question.switch(question.previous, question.active);
 
 
     } else {
 
-        // console.log('');
-        // console.log('');
-        // console.log('No more question to ask -> order.index: ' + order.index);
-        // console.log('');
-        // console.log('decisions made:')
-        // console.log(decision);;
-        // console.log('');
+        console.log('otherActive: ' + question.otherActive);
 
-        decision.save();
+        if(question.otherActive) {
+
+            question.switch(question.active, 'other');
+
+        } else {
+
+            decision.otherRace = 'NA';
+
+            console.log('');
+            console.log('');
+            console.log('No more question to ask -> order.index: ' + order.index);
+            console.log('');
+            console.log('decisions made:')
+            console.log(decision);;
+            console.log('');
+
+            decision.save();
+
+        }
 
     }
 

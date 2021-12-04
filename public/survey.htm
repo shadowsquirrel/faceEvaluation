@@ -36,108 +36,135 @@
                 <div class='frame-A-0' id='frame-0'>
 
                     <!-- <div class='frame-A-0-0 noselect' id='frame-0-0'>
-                        <p class='questionIndexText'>
-                            Question <span id=questionIndex class=qIndex></span>/<span id=numOfQuestion class=qIndex></span>
-                        </p>
-                    </div> -->
+                    <p class='questionIndexText'>
+                    Question <span id=questionIndex class=qIndex></span>/<span id=numOfQuestion class=qIndex></span>
+                </p>
+            </div> -->
 
-                    <div class="container" style='opacity:0;'>
-                        <div class="progress">
-                            <div class="progress-bar bg-success" role="progressbar" style="width: 10%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-
+            <div class="container" style='opacity:0;'>
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 10%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
-
             </div>
 
+        </div>
 
-            <div class='frame-B'>
+    </div>
 
-                <div class='frame-B-0'>
 
-                    <div class='frame-B-0-0'>
+    <div class='frame-B'>
 
-                        <div class='question gender'>
+        <div class='frame-B-0'>
 
-                                <p class='qText'>
-                                    What gender do you identify with?
-                                </p>
+            <div class='frame-B-0-0'>
 
-                                <div class='buttonWrap bWrapGender'>
+                <div class='question gender'>
 
-                                    <div class=button id=female>Female</div>
+                    <p class='qText'>
+                        What gender do you identify with?
+                    </p>
 
-                                    <div class=button id=male>Male</div>
+                    <div class='buttonWrap bWrapGender'>
 
-                                    <div class=button id=diverse>Diverse</div>
+                        <div class=button id=female>Female</div>
 
-                                </div>
+                        <div class=button id=male>Male</div>
 
-                            </div>
-
-                        <div class='question age'>
-
-                            <p class='qText'>
-                                What is your age group (in years)?
-                            </p>
-
-                            <div class='buttonWrap bWrapAge'>
-
-                                <div class=button id=18-24>18-24 years old</div>
-
-                                <div class=button id=25-34>25-34 years old</div>
-
-                                <div class=button id=35-44>35-44 years old</div>
-
-                                <div class=button id=45-54>45-54 years old</div>
-
-                                <div class=button id=55-64>55-64 years old</div>
-
-                                <div class=button id=65-74>65-74 years old</div>
-
-                                <div class=button id=75plus>75 years or older</div>
-
-                            </div>
-
-                        </div>
-
-                        <div class='question race'>
-
-                            <p class='qText'>
-                                How would you describe yourself?
-                            </p>
-
-                            <div class='buttonWrap bWrapRace'>
-
-                                <div class=button id=alaska>American Indian or Alaskan Native</div>
-
-                                <div class=button id=asian>Asian</div>
-
-                                <div class=button id=hispanic>Latino</div>
-
-                                <div class=button id=black>Black or African American</div>
-
-                                <div class=button id=pacific>Native Hawaiian or Other Pacific Islander</div>
-
-                                <div class=button id=white>
-                                    Caucasian
-                                </div>
-
-                            </div>
-
-                        </div>
+                        <div class=button id=diverse>Diverse</div>
 
                     </div>
 
                 </div>
 
-            </div>
+                <div class='question age'>
 
+                    <p class='qText'>
+                        What is your age group (in years)?
+                    </p>
 
-            <div class='frame-C'>
+                    <div class='buttonWrap bWrapAge'>
 
-                3 questions about you
+                        <div class=button id=18-24>18-24 years old</div>
+
+                        <div class=button id=25-34>25-34 years old</div>
+
+                        <div class=button id=35-44>35-44 years old</div>
+
+                        <div class=button id=45-54>45-54 years old</div>
+
+                        <div class=button id=55-64>55-64 years old</div>
+
+                        <div class=button id=65-74>65-74 years old</div>
+
+                        <div class=button id=75plus>75 years or older</div>
+
+                    </div>
+
+                </div>
+
+                <div class='question race'>
+
+                    <p class='qText'>
+                        How would you describe yourself?
+                    </p>
+
+                    <div class='buttonWrap bWrapRace'>
+
+                        <div class=button id=alaska>American Indian or Alaskan Native</div>
+
+                        <div class=button id=asian>Asian</div>
+
+                        <div class=button id=hispanic>Latino</div>
+
+                        <div class=button id=black>Black or African American</div>
+
+                        <div class=button id=pacific>Native Hawaiian or Other Pacific Islander</div>
+
+                        <div class=button id=white>
+                            Caucasian
+                        </div>
+
+                        <div class=button id=other>
+                            Other
+                        </div>
+
+                        <!-- <div class='buttonWrap'>
+                            <form>
+                                <label style='font-weight:100;'>Other</label>
+                                <input type='text' id='otherRace' />
+                            </form>
+                            <div class=button id=white>
+                                submit
+                            </div>
+                        </div> -->
+
+                    </div>
+
+                </div>
+
+                <div class='question other'>
+
+                    <p class='qText'>
+                        Please specify 'Other' (race) and click submit
+                    </p>
+
+                    <div class='buttonWrap bWrapOther'>
+                        <div class='buttonWrap'>
+                            <form class='myForm'>
+                                <input type='text'  class='otherRaceInputText' id='otherRace' />
+                            </form>
+                            <div class='button otherSubmitButton' id=otherRaceInputButton>
+                                SUBMIT
+                            </div>
+
+                            <p class='formWarningText'>
+                                Please fill out the above field.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
 
             </div>
 
@@ -145,24 +172,35 @@
 
     </div>
 
-    <div class='frame-hidden'>
 
-        <p>
-            HIDDEN SPACE
-            <br />
-            TO MAKE SURE BUTTON SPACE
-            <br />
-            IS ALWAYS THERE
-        </p>
+    <div class='frame-C'>
+
+        3 questions about you
 
     </div>
 
-    <div id=end></div>
+</div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="js/surveyHelper.js"></script>
-    <script src="js/surveyButtons.js"></script>
-    <script src="js/survey.js"></script>
+</div>
+
+<div class='frame-hidden'>
+
+    <p>
+        HIDDEN SPACE
+        <br />
+        TO MAKE SURE BUTTON SPACE
+        <br />
+        IS ALWAYS THERE
+    </p>
+
+</div>
+
+<div id=end></div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="js/surveyHelper.js"></script>
+<script src="js/surveyButtons.js"></script>
+<script src="js/survey.js"></script>
 
 </body>
 </html>

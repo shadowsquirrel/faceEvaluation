@@ -61,9 +61,9 @@ body {
 }
 .facePicture
 {
-    /* height:36vh; */
-    height: 45em;
-    /* margin-top: -3em; */
+
+    /* height: 45em; */
+    height:55em;
 }
 
 /*----------------- B ------------------*/
@@ -131,6 +131,9 @@ body {
     display:block;
     margin-top:-1%;
 }
+
+
+
 
 
 /* ------------------------------ */

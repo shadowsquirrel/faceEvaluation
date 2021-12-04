@@ -30,8 +30,8 @@ window.onload = function() {
 
         node.emit('HTML-recordSecretSurveyTimer');
 
-        // console.log('decision of the player');
-        // console.log(decision);
+        console.log('decision of the player');
+        console.log(decision);
 
         $('.all').css({'transition':'0.5s', 'opacity':'0'});
 

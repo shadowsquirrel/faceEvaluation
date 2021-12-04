@@ -115,7 +115,7 @@ window.onload = function() {
     }, 1500)
 
 
-    $('#submitButton').click(function() {
+    $('#submitButton, #submitButton-mobile').click(function() {
 
         node.emit('HTML-reportEvaluation', decision);
 

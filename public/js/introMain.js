@@ -19,7 +19,7 @@ window.onload = function() {
 
             if(state === 0) {
 
-                $('.pointer-3').css({'transition':'1s', 'margin-left':'-7%'});
+                $('.pointer-3').css({'transition':'1s', 'margin-left':'11%'});
 
                 setTimeout(()=>{
                     arrow.wiggle3(1);
@@ -29,7 +29,7 @@ window.onload = function() {
 
             if(state === 1) {
 
-                $('.pointer-3').css({'transition':'1s', 'margin-left':'-1%'});
+                $('.pointer-3').css({'transition':'1s', 'margin-left':'8%'});
 
                 setTimeout(()=>{
                     arrow.wiggle3(0);

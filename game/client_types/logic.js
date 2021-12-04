@@ -128,6 +128,7 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
                 'gender',
                 'age',
                 'race',
+                'otherRace'
             ],
 
             keepUpdated: true

@@ -52,7 +52,7 @@ ageDecisionList.forEach(i => {
 
 // race buttons
 let raceDecisionList = [
-    'alaska', 'asian', 'hispanic', 'black', 'pacific', 'white'
+    'alaska', 'asian', 'hispanic', 'black', 'pacific', 'white', 'other'
 ];
 
 raceDecisionList.forEach(i => {
@@ -63,14 +63,44 @@ raceDecisionList.forEach(i => {
 
         var index = raceDecisionList.indexOf(i);
 
-        // console.log('race index: ' + index);
+        console.log('race index: ' + index);
 
         decision.race = index;
 
-        // console.log('race decision: ' + decision.race);
+        console.log('race decision: ' + decision.race);
+
+        console.log(string);
+
+
+        if(string === '#other') {
+            question.otherActive = true;
+            console.log('other button clicked');
+            console.log(question.otherActive);
+        }
 
         question.next();
+
 
     });
 
 });
+
+$('#otherRaceInputButton').click(function() {
+
+    if($('#otherRace').val() != '') {
+
+
+        decision.otherRace = $('#otherRace').val();
+        console.log(decision.otherRace);
+
+        console.log('end survey');
+
+        decision.save();
+
+    } else {
+
+        $('.formWarningText').css({'opacity':'1'});
+
+    }
+
+})

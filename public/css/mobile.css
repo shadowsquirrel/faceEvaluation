@@ -25,6 +25,10 @@ and (max-device-height: 926px)
     {
         /* margin-top:-6em; */
     }
+    .frame-B
+    {
+        padding-top:0vh;
+    }
     .sliderWrapWrap
     {
         margin-top:5em;
@@ -43,18 +47,18 @@ and (max-device-height: 926px)
     }
     .frame-button
     {
-        display:flex;
+        display:none;
         width:70%;
         margin-left:15%;
     }
     .submitButton
     {
+        margin-top:-5rem;
         height:auto;
         font-size:11em;
         text-align:center;
         padding-bottom:0em;
     }
-
 
 }
 
@@ -67,7 +71,9 @@ and (max-device-height: 926px)
 and (device-height : 568px)
 and (device-width : 320px)
 {
-
+    .facePicture {
+        height:35em;
+    }
 }
 
 
@@ -80,7 +86,9 @@ and (device-width : 320px)
 and (device-height : 667px)
 and (device-width : 375px)
 {
-
+    .facePicture {
+        height:35em;
+    }
 }
 
 
@@ -92,7 +100,9 @@ and (device-width : 375px)
 and (device-height : 736px)
 and (device-width : 414px)
 {
-
+    .facePicture {
+        height:40em;
+    }
 }
 
 

@@ -99,8 +99,9 @@
 {
     position: absolute;
     z-index: 10;
-    height: 50%;
+    /* height: 50%; */
+    height: 5rem;
     width: auto;
-    margin-left: -1%;
+    margin-left: 4%;
     /* margin-left: -7%; */
 }
