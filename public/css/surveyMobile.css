@@ -53,8 +53,13 @@ and (max-device-height: 926px)
     .qText
     {
         text-align: center;
+        font-weight:700;
     }
+    .raceqText
+    {
+        font-size:5rem;
 
+    }
 
 }
 
