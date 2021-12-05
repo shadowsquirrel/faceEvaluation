@@ -29,3 +29,83 @@ html, body {
     font-weight:100;
     margin-top:5%;
 }
+.endMessage-2
+{
+    opacity:0;
+    display:none;
+    /* background: blue; */
+    padding:4rem;
+    font-size: 9rem;
+    text-align: center;
+    font-weight:100;
+    margin-top:5%;
+}
+
+
+/*--------------*/
+.firstTextWrap
+{
+    margin-top:-4%;
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+}
+
+.firstText
+{
+    font-size:7rem;
+    width:auto;
+}
+.feedbackFormWrap
+{
+    margin-top:7rem;
+}
+.feedbackForm
+{
+    font-size:7rem;
+    background-color:aliceblue;
+}
+.mobileFeedback
+{
+    display:block;
+}
+.laptopFeedback
+{
+    display:none;
+}
+
+.buttonWrap
+{
+    font-size:10rem;
+    font-weight:100;
+}
+.button
+{
+    transition:0.2s;
+    cursor:pointer;
+    border-radius:100px;
+    padding-left: 25%;
+    width:150%;
+}
+.button:hover
+{
+    background:black;
+    color:white;
+}
+.button:active
+{
+    background:darkgreen;
+}
+.feedbackButton
+{
+    text-align: center;
+    padding-left:0;
+    width:auto;
+
+    background-color:darkgreen;
+    box-shadow:0px 3px 4px 2px black;
+    cursor:pointer;
+    border:solid 2px black;
+    color:white;
+    font-weight:800;
+}

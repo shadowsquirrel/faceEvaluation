@@ -4,7 +4,7 @@
 @media only screen
 and (min-width : 1280px)
 {
-    .endMessage
+    .endMessage, .endMessage-2
     {
         /* background: blue; */
         padding:4rem;
@@ -12,5 +12,33 @@ and (min-width : 1280px)
         text-align: center;
         font-weight:100;
         margin-top:5%;
+    }
+    .firstText
+    {
+        font-size:3rem;
+        width:80%;
+    }
+    .mobileFeedback
+    {
+        display:none;
+    }
+    .laptopFeedback
+    {
+        display:block;
+    }
+    .feedbackForm
+    {
+        font-size:4rem;
+        background-color:aliceblue;
+    }
+    .buttonWrap
+    {
+        font-size:7rem;
+        display:flex;
+        justify-content: center;
+    }
+    .feedbackButton
+    {
+        width:30%;
     }
 }

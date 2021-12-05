@@ -102,6 +102,7 @@
     /* height: 50%; */
     height: 5rem;
     width: auto;
-    margin-left: 4%;
+    margin-left: 0%;
+    margin-right:-4%;
     /* margin-left: -7%; */
 }

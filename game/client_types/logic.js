@@ -135,6 +135,19 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
 
         })
 
+
+        memory.view('feedback').save('feedback.csv', {
+
+            header: [
+                'player',
+                'feedback'
+            ],
+
+            keepUpdated: true
+
+        })
+
+
         // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ //
         // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ //
         // ++++++++++++                                         ++++++++++++ //

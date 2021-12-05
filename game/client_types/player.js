@@ -103,12 +103,12 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
 
         node.on('HTML-reportSurveyResults', function(msg) {
 
-            this.talk('CLIENT: SURVEY RESULTS RECEIVED')
-            this.talk(msg.age);
-            this.talk(msg.gender);
-            this.talk(msg.race);
-            this.talk(msg.otherRaces)
-            this.talk('----------------')
+            // this.talk('CLIENT: SURVEY RESULTS RECEIVED')
+            // this.talk(msg.age);
+            // this.talk(msg.gender);
+            // this.talk(msg.race);
+            // this.talk(msg.otherRaces)
+            // this.talk('----------------')
 
             // -------------------------------------------- //
             // -----------  CLIENT --> LOGIC  ------------- //
@@ -119,6 +119,25 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
                 race:msg.race,
                 otherRace:msg.otherRace,
             })
+
+        })
+
+
+        node.on('HTML-feedback', function(msg) {
+
+            // this.talk('feedback received')
+            // this.talk(msg)
+
+            node.done({
+
+                feedback:msg
+
+            })
+
+
+            setTimeout(()=>{
+
+            }, 5000)
 
         })
 

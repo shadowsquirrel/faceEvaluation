@@ -12,7 +12,7 @@ arrow.wiggle0 = function(state) {
 
         if(state === 0) {
 
-            $('.pointer-0').css({'transition':'1s', 'margin-left':'8%'});
+            $('.pointer-0').css({'transition':'1s', 'margin-left':'-8%'});
 
             setTimeout(()=>{
                 arrow.wiggle0(1);
@@ -22,7 +22,7 @@ arrow.wiggle0 = function(state) {
 
         if(state === 1) {
 
-            $('.pointer-0').css({'transition':'1s', 'margin-left':'4%'});
+            $('.pointer-0').css({'transition':'1s', 'margin-left':'-4%'});
 
             setTimeout(()=>{
                 arrow.wiggle0(0);
@@ -47,7 +47,7 @@ arrow.wiggle1 = function(state) {
 
         if(state === 0) {
 
-            $('.pointer-1').css({'transition':'1s', 'margin-left':'8%'});
+            $('.pointer-1').css({'transition':'1s', 'margin-left':'-8%'});
 
             setTimeout(()=>{
                 arrow.wiggle1(1);
@@ -57,7 +57,7 @@ arrow.wiggle1 = function(state) {
 
         if(state === 1) {
 
-            $('.pointer-1').css({'transition':'1s', 'margin-left':'4%'});
+            $('.pointer-1').css({'transition':'1s', 'margin-left':'-4%'});
 
             setTimeout(()=>{
                 arrow.wiggle1(0);
@@ -82,7 +82,7 @@ arrow.wiggle2 = function(state) {
 
         if(state === 0) {
 
-            $('.pointer-2').css({'transition':'1s', 'margin-left':'8%'});
+            $('.pointer-2').css({'transition':'1s', 'margin-left':'-8%'});
 
             setTimeout(()=>{
                 arrow.wiggle2(1);
@@ -92,7 +92,7 @@ arrow.wiggle2 = function(state) {
 
         if(state === 1) {
 
-            $('.pointer-2').css({'transition':'1s', 'margin-left':'4%'});
+            $('.pointer-2').css({'transition':'1s', 'margin-left':'-4%'});
 
             setTimeout(()=>{
                 arrow.wiggle2(0);
@@ -117,7 +117,7 @@ arrow.wiggle3 = function(state) {
 
         if(state === 0) {
 
-            $('.pointer-3').css({'transition':'1s', 'margin-left':'8%'});
+            $('.pointer-3').css({'transition':'1s', 'margin-left':'-8%'});
 
             setTimeout(()=>{
                 arrow.wiggle3(1);
@@ -127,7 +127,7 @@ arrow.wiggle3 = function(state) {
 
         if(state === 1) {
 
-            $('.pointer-3').css({'transition':'1s', 'margin-left':'4%'});
+            $('.pointer-3').css({'transition':'1s', 'margin-left':'-4%'});
 
             setTimeout(()=>{
                 arrow.wiggle3(0);
@@ -152,7 +152,7 @@ arrow.wiggle4 = function(state) {
 
         if(state === 0) {
 
-            $('.pointer-4').css({'transition':'1s', 'margin-left':'8%'});
+            $('.pointer-4').css({'transition':'1s', 'margin-left':'-8%'});
 
             setTimeout(()=>{
                 arrow.wiggle4(1);
@@ -162,7 +162,7 @@ arrow.wiggle4 = function(state) {
 
         if(state === 1) {
 
-            $('.pointer-4').css({'transition':'1s', 'margin-left':'4%'});
+            $('.pointer-4').css({'transition':'1s', 'margin-left':'-4%'});
 
             setTimeout(()=>{
                 arrow.wiggle4(0);

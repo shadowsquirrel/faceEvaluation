@@ -19,32 +19,62 @@
 </head>
 <body>
 
+
     <div class='frame-main-column'>
 
         <div class='frame-main-row'>
 
             <div class='endMessage'>
 
-            The experiment has ended.
+                <div class=firstTextWrap>
 
-            <br />
-            <br />
+                    <div class=firstText>
+                        The experiment has ended.
 
-            Thank you for your participation!
+                        <br />
+                        <br />
 
-            <br />
-            <br />
+                        Please use the box below for any feedback you would like to share with us
+                        then click the SUBMIT button.
+                    </div>
 
-            You can close the window to exit.
+                </div>
 
-        </div>
+                <form class='feedbackFormWrap mobileFeedback'>
+                    <textarea cols=30 rows=5 class='feedbackForm' id='feedback' />
+                    </textarea>
+                </form>
+
+                <form class='feedbackFormWrap laptopFeedback'>
+                    <textarea cols=80 rows=5 class='feedbackForm' id='feedback' />
+                    </textarea>
+                </form>
+
+                <div class=buttonWrap>
+                    <div class='button feedbackButton' id=feedbackButton>
+                        SUBMIT
+                    </div>
+                </div>
+
+            </div>
+
+            <div class='endMessage-2'>
+
+                Thank you for your participation!
+
+                <br />
+                <br />
+
+                You can close the window to exit.
+
+            </div>
 
         </div>
 
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-
+    <script src="js/feedback.js"></script>
 
 </body>
 </html>
