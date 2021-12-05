@@ -38,7 +38,7 @@ and (max-device-height: 926px)
         display:flex;
         flex-direction: column;
         margin-top:10%;
-        font-size:6rem;
+        font-size:5rem;
     }
     .bWrapGender
     {
@@ -57,7 +57,7 @@ and (max-device-height: 926px)
     }
     .raceqText
     {
-        font-size:5rem;
+        font-size:4rem;
 
     }
 

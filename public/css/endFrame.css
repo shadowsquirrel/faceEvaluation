@@ -49,11 +49,13 @@ html, body {
     display:flex;
     flex-direction:row;
     justify-content: center;
+    padding-left:5rem;
+    padding-right:5rem;
 }
 
 .firstText
 {
-    font-size:7rem;
+    font-size:5rem;
     width:auto;
 }
 .feedbackFormWrap
