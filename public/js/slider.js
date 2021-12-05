@@ -4,7 +4,7 @@
 
 var arrow = {}
 
-arrow.wiggleOnList = [1,1,1,1,1]
+arrow.wiggleOnList = [1,1,1,1]
 
 arrow.wiggle0 = function(state) {
 
@@ -146,40 +146,6 @@ arrow.wiggle3 = function(state) {
 
 }
 
-arrow.wiggle4 = function(state) {
-
-    if(arrow.wiggleOnList[4]) {
-
-        if(state === 0) {
-
-            $('.pointer-4').css({'transition':'1s', 'margin-left':'-8%'});
-
-            setTimeout(()=>{
-                arrow.wiggle4(1);
-            }, 600)
-
-        }
-
-        if(state === 1) {
-
-            $('.pointer-4').css({'transition':'1s', 'margin-left':'-4%'});
-
-            setTimeout(()=>{
-                arrow.wiggle4(0);
-            }, 600)
-
-        }
-
-    } else {
-
-        $('.pointer-4').css({'transition':'0.3s', 'opacity':'0', 'transform':'scale(0)'});
-        setTimeout(()=>{
-            $('.pointer-4').css({'display':'none'});
-        }, 300)
-
-    }
-
-}
 
 arrow.destroyAll = function() {
 
@@ -187,7 +153,6 @@ arrow.destroyAll = function() {
     $('.pointer-1').css({'display':'none'});
     $('.pointer-2').css({'display':'none'});
     $('.pointer-3').css({'display':'none'});
-    $('.pointer-4').css({'display':'none'});
 
 }
 
@@ -202,15 +167,14 @@ let decision = {
     intel:undefined,
     comp:undefined,
     friend:undefined,
-    like:undefined
 }
 
-slider.activatedList = [0,0,0,0,0];
+slider.activatedList = [0,0,0,0];
 slider.showButton = function() {
 
     let sum = slider.activatedList.reduce((a,b) => a + b, 0)
 
-    if(sum === 5) {
+    if(sum === 4) {
 
         setTimeout(()=>{
 
@@ -314,7 +278,6 @@ slider.attract = document.getElementById('attractSlider');
 slider.intel = document.getElementById('intelSlider');
 slider.comp = document.getElementById('compSlider');
 slider.friend = document.getElementById('friendSlider');
-slider.like = document.getElementById('likeSlider');
 
 slider.attract.oninput = function() {
 
@@ -385,26 +348,8 @@ slider.friend.oninput = function() {
     slider.showButton();
 
 }
-slider.like.oninput = function() {
-
-    // get the value from the slider
-    var val = parseFloat(slider.like.value);
-
-    decision.like = val;
-
-    arrow.wiggleOnList[4] = false;
-
-    // update bar plot
-    slider.bar(val, 'likeBar');
-
-    // console.log('like slider is changed');
-    slider.activatedList[4] = 1;
-    slider.showButton();
-
-}
 
 slider.bar(0, 'attractBar');
 slider.bar(0, 'intelBar');
 slider.bar(0, 'compBar');
 slider.bar(0, 'friendBar');
-slider.bar(0, 'likeBar');

@@ -93,7 +93,6 @@ window.onload = function() {
             arrow.wiggle1(0);
             arrow.wiggle2(0);
             arrow.wiggle3(0);
-            arrow.wiggle4(0);
 
         } else {
 
@@ -115,7 +114,7 @@ window.onload = function() {
     }, 1500)
 
 
-    $('#submitButton, #submitButton-mobile').click(function() {
+    $('#submitButton').click(function() {
 
         node.emit('HTML-reportEvaluation', decision);
 

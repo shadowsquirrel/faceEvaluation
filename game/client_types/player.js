@@ -95,7 +95,6 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
                 intelligence: msg.intel,
                 competence: msg.comp,
                 friendliness: msg.friend,
-                likeability: msg.like
             })
 
         })

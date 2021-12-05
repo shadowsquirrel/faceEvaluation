@@ -113,7 +113,6 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
                 'intelligence',
                 'competence',
                 'friendliness',
-                'likeability'
             ],
 
             keepUpdated: true
