@@ -4,7 +4,6 @@ rotate.textList = [
     'Attractiveness',
     'Intelligence',
     'Competence',
-    'Likeability',
     'Friendlines'
 ]
 
