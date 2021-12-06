@@ -4,7 +4,7 @@ rotate.textList = [
     'Attractiveness',
     'Intelligence',
     'Competence',
-    'Friendlines'
+    'Friendliness'
 ]
 
 rotate.infoTextOn = true;
@@ -13,9 +13,11 @@ rotate.traitText = function(textIndex) {
 
     if(rotate.infoTextOn) {
 
+        // console.log('text index: ' + textIndex);
+
         $('#rotatingTraits').html(rotate.textList[textIndex]);
 
-        var nextIndex = (textIndex + 1) % (rotate.textList.length - 1)
+        var nextIndex = (textIndex + 1) % (rotate.textList.length)
 
         setTimeout(()=>{
             $('#rotatingTraits').css({'transition':'0.5s', 'opacity':'1'});
