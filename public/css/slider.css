@@ -9,8 +9,11 @@
     flex-grow: 1;
     border-top-left-radius: 45px;
     border-top-right-radius: 45px;
-    margin-bottom: -5vh;
-    margin-top: -1vh;
+    /*---------------------*/
+    /* margin-bottom: -5vh;
+    margin-top: -1vh; */
+    margin-bottom:2rem;
+    /*---------------------*/
 }
 .sliderTextWrap
 {
@@ -24,8 +27,12 @@
     font-weight: 500;
     opacity: 1;
     color: black;
-    font-size: 5vw;
-    margin-bottom: -3vh;
+    /*---------------------*/
+    /* font-size: 5vw; */
+    font-size: 3rem;
+    /* margin-bottom: -3vh; */
+    margin-bottom: -2vh;
+    /*---------------------*/
 }
 .sliderBar
 {

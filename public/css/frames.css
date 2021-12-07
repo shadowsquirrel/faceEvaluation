@@ -86,12 +86,12 @@ body {
 {
     display: flex;
     flex:auto;
-    flex-direction: column;;
-    /* justify-content: center; */
-    justify-content: start;
+    flex-direction: row;;
+    justify-content: center;
+    /* justify-content: start; */
     padding-left: 0vh;
     padding-right: 0vh;
-    padding-top:10em;
+    padding-top:5em;
     padding-bottom:20em;
 }
 
@@ -100,7 +100,7 @@ body {
 .submitButton
 {
     padding-bottom:5vh;
-    height:6vh;
+    height:11rem;
     border-radius: 10vh;
     display:flex;
     flex-direction:row;
@@ -111,7 +111,13 @@ body {
     border:solid 2px black;
     color:white;
     /* font-size:25px; */
+
+    /*-------------------*/
     font-size:11em;
+    font-size:7rem;
+    padding-left:2rem;
+    padding-right:2rem;
+    /*-------------------*/
     font-weight:800;
 }
 .submitButton:hover

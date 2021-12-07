@@ -2,7 +2,7 @@
 /* Desktops and laptops ----- */
 /* -------------------------- */
 @media only screen
-and (min-width : 1280px)
+and (min-width : 1080px)
 {
     .frame-AB
     {
@@ -18,10 +18,10 @@ and (min-width : 1280px)
     {
         margin-top:3%;
     }
-    /* .facePicture
+    .facePicture
     {
-        height:70em;
-    } */
+        height:55em;
+    }
     .frame-B
     {
         height:max-content;
@@ -72,11 +72,11 @@ and (device-width : 1280px)
 {
     .frame-B
     {
-        margin-left:-8em;
+        /* margin-left:-8em; */
     }
     .submitButton
     {
-        font-size:3em;
+        font-size:6em;
         height:1.7em;
     }
 }
@@ -88,11 +88,11 @@ and (device-width : 1280px)
 {
     .frame-B
     {
-        margin-left:-8em;
+        /* margin-left:-8em; */
     }
     .submitButton
     {
-        font-size:3em;
+        font-size:6rem;
         height:1.7em;
     }
 }
@@ -102,10 +102,10 @@ and (device-width : 1280px)
 and (device-height : 900px)
 and (device-width : 1600px)
 {
-    /* .facePicture
+    .facePicture
     {
         height:89em;
-    } */
+    }
     .frame-B
     {
         margin-left:-20em;
@@ -117,7 +117,7 @@ and (device-width : 1600px)
     }
     .submitButton
     {
-        font-size:5em;
+        font-size:7em;
         height:1.7em;
     }
 }
@@ -129,12 +129,12 @@ and (device-width : 1600px)
 and (device-height : 900px)
 and (device-width : 1440px)
 {
-    /* .facePicture
+    .facePicture
     {
         height:89em;
         margin-left:-10em;
         margin-right:10em;
-    } */
+    }
     .frame-B
     {
         margin-left:-20em;
@@ -160,7 +160,7 @@ and (device-width : 1536px)
 {
     .facePicture
     {
-        /* height:85em; */
+        height:85em;
     }
     .frame-B
     {
@@ -209,7 +209,7 @@ and (device-width : 1920px)
     .submitButton
     {
         height:1.5em;
-        font-size:4em;
+        font-size:7em;
         padding-bottom:1.6em;
     }
 }

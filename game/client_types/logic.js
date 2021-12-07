@@ -66,7 +66,7 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
 
             } else {
 
-                // console.log('Player is ALREADY initiated !!!');
+                console.log('Player is ALREADY initiated !!!');
 
             }
 
@@ -97,7 +97,7 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
                 currentRound: player.evalRound
             }
 
-            // console.log(data);
+            console.log(data);
 
             node.say('LOGIC-nextPicture', player.id, data);
 
@@ -157,20 +157,20 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
 
         node.game.disconnected.oguzAtay = function(player) {
 
-            // console.log();
-            // console.log();
-            // console.log(' --- Player ' + player.id + ' is disconnected ---');
-            // console.log(' --- Disconnected player\'s count is ' + player.count + ' ---');
-            // console.log();
-            // console.log(' --- Disconnected player\'s info in logic data base ---');
-            // console.log(' -- picture index order -- ');
-            // console.log(player.pictureIndexOrder);
-            // console.log(' -- is initiated-- ');
-            // console.log(player.initiated);
-            // console.log(' -- evaluation round -- ');
-            // console.log(player.evalRound);
-            // console.log();
-            // console.log();
+            console.log();
+            console.log();
+            console.log(' --- Player ' + player.id + ' is disconnected ---');
+            console.log(' --- Disconnected player\'s count is ' + player.count + ' ---');
+            console.log();
+            console.log(' --- Disconnected player\'s info in logic data base ---');
+            console.log(' -- picture index order -- ');
+            console.log(player.pictureIndexOrder);
+            console.log(' -- is initiated-- ');
+            console.log(player.initiated);
+            console.log(' -- evaluation round -- ');
+            console.log(player.evalRound);
+            console.log();
+            console.log();
 
         }
 
@@ -189,38 +189,38 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
 
         node.game.disconnected.reIntroduce = function(player) {
 
-            // console.log();
-            // console.log();
-            // console.log(' --- Player ' + player.id + ' is reconnected ---');
-            // console.log(' --- Reconnected player\'s count is ' + player.count + ' ---');
-            // console.log();
-            // console.log(' --- Reconnected player\'s info in logic data base ---');
-            // console.log(' -- picture index order -- ');
-            // console.log(player.pictureIndexOrder);
-            // console.log(' -- is initiated-- ');
-            // console.log(player.initiated);
-            // console.log(' -- evaluation round -- ');
-            // console.log(player.evalRound);
-            // console.log();
-            // console.log();
+            console.log();
+            console.log();
+            console.log(' --- Player ' + player.id + ' is reconnected ---');
+            console.log(' --- Reconnected player\'s count is ' + player.count + ' ---');
+            console.log();
+            console.log(' --- Reconnected player\'s info in logic data base ---');
+            console.log(' -- picture index order -- ');
+            console.log(player.pictureIndexOrder);
+            console.log(' -- is initiated-- ');
+            console.log(player.initiated);
+            console.log(' -- evaluation round -- ');
+            console.log(player.evalRound);
+            console.log();
+            console.log();
 
             // disconnected before evaluating the previous round
             // so we go back to the previous round
             player.evalRound--;
 
-            // let pIndex = player.evalRound - 1;
-            //
-            // let currentFaceIndex = player.pictureIndexOrder[pIndex];
-            //
-            // let data = {
-            //     currentFaceIndex: player.pictureIndexOrder[pIndex],
-            //     currentRound: player.evalRound
-            // }
-            //
-            // console.log(' -- data to be sent to the reconnected player');
-            // console.log(data);
-            //
-            // node.say('LOGIC-nextPicture', player.id, data);
+            let pIndex = player.evalRound - 1;
+
+            let currentFaceIndex = player.pictureIndexOrder[pIndex];
+
+            let data = {
+                currentFaceIndex: player.pictureIndexOrder[pIndex],
+                currentRound: player.evalRound
+            }
+
+            console.log(' -- data to be sent to the reconnected player');
+            console.log(data);
+
+            node.say('LOGIC-nextPicture', player.id, data);
 
         }
 
