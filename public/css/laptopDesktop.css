@@ -18,10 +18,10 @@ and (min-width : 1280px)
     {
         margin-top:3%;
     }
-    .facePicture
+    /* .facePicture
     {
         height:70em;
-    }
+    } */
     .frame-B
     {
         height:max-content;
@@ -102,10 +102,10 @@ and (device-width : 1280px)
 and (device-height : 900px)
 and (device-width : 1600px)
 {
-    .facePicture
+    /* .facePicture
     {
         height:89em;
-    }
+    } */
     .frame-B
     {
         margin-left:-20em;
@@ -129,12 +129,12 @@ and (device-width : 1600px)
 and (device-height : 900px)
 and (device-width : 1440px)
 {
-    .facePicture
+    /* .facePicture
     {
         height:89em;
         margin-left:-10em;
         margin-right:10em;
-    }
+    } */
     .frame-B
     {
         margin-left:-20em;
@@ -160,7 +160,7 @@ and (device-width : 1536px)
 {
     .facePicture
     {
-        height:85em;
+        /* height:85em; */
     }
     .frame-B
     {
