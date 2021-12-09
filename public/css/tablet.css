@@ -12,11 +12,6 @@ and (max-device-height: 1080px)
 and (max-device-width: 962px)
 and (orientation: portrait)
 {
-
-    .facePicture
-    {
-        /* margin-top:-6em; */
-    }
     .sliderWrapWrap
     {
         margin-top:5em;
@@ -36,64 +31,17 @@ and (orientation: portrait)
     .frame-button
     {
         display:flex;
-        width:70%;
-        margin-left:15%;
     }
     .submitButton
     {
         height:auto;
-        font-size:6em;
+        font-size:9em;
         text-align:center;
         padding-bottom:0em;
     }
-
-
 }
 
 
-/* -------------------------- */
-/* iPad --------------------- */
-/* -------------------------- */
-
-/*---- PORTRAIT ----*/
-/* @media only screen
-and (device-height : 1024px)
-and (device-width : 768px)
-{
-    .facePicture
-    {
-        margin-top:-3em;
-    }
-    .sliderWrapWrap
-    {
-        margin-top:5em;
-        margin-bottom:9em;
-        transform:scaleY(2) scaleX(2.2);
-    }
-    .sliderText
-    {
-        font-size:2.5em;
-        margin-bottom:-0.5em;
-    }
-    .frame-sliders
-    {
-        display:flex;
-        flex-direction:column;
-    }
-    .frame-button
-    {
-        display:flex;
-        width:70%;
-        margin-left:15%;
-    }
-    .submitButton
-    {
-        height:auto;
-        font-size:6em;
-        text-align:center;
-        padding-bottom:0em;
-    }
-} */
 
 /* -------------------------- */
 /* iPad Pro ----------------- */
@@ -104,10 +52,6 @@ and (device-width : 768px)
 and (device-height : 1366px)
 and (device-width : 1024px)
 {
-    .facePicture
-    {
-        /* margin-top:-3em; */
-    }
     .sliderWrapWrap
     {
         margin-top:5em;
@@ -138,53 +82,6 @@ and (device-width : 1024px)
         padding-bottom:0em;
     }
 }
-
-/* -------------------------- */
-/* SURFACE DUO -------------- */
-/* -------------------------- */
-
-/*---- PORTRAIT ----*/
-/* @media only screen
-and (device-height : 720px)
-and (device-width : 540px)
-{
-    .facePicture
-    {
-        margin-top:-3em;
-    }
-    .sliderWrapWrap
-    {
-        margin-top:5em;
-        margin-bottom:9em;
-        transform:scaleY(2) scaleX(2.2);
-    }
-    .sliderText
-    {
-        font-size:2.5em;
-        margin-bottom:-0.5em;
-    }
-    .frame-sliders
-    {
-        display:flex;
-        flex-direction:column;
-    }
-    .frame-button
-    {
-        display:flex;
-        width:70%;
-        margin-left:15%;
-    }
-    .submitButton
-    {
-        height:auto;
-        font-size:6em;
-        text-align:center;
-        padding-bottom:0em;
-    }
-} */
-
-
-
 
 
 /* -------------------  */
@@ -202,14 +99,6 @@ and (orientation: landscape)
         transform-origin: top;
         transform:scale(0.85);
     }
-    .frame-progressBar
-    {
-        /* margin-bottom:5%; */
-    }
-    .facePicture
-    {
-        /* margin-top:-6em; */
-    }
     .sliderWrapWrap
     {
         margin-top:5em;
@@ -242,91 +131,3 @@ and (orientation: landscape)
 
 
 }
-
-/* -------------------------- */
-/* iPad --------------------- */
-/* -------------------------- */
-/*---- LANDSCAPE ----*/
-/* @media only screen
-and (device-height : 768px)
-and (device-width : 1024px)
-{
-    .facePicture
-    {
-        margin-top:-3em;
-    }
-    .sliderWrapWrap
-    {
-        margin-top:5em;
-        margin-bottom:9em;
-        transform:scaleY(2) scaleX(2.2);
-    }
-    .sliderText
-    {
-        font-size:2.5em;
-        margin-bottom:-0.5em;
-    }
-    .frame-sliders
-    {
-        display:flex;
-        flex-direction:column;
-    }
-    .frame-button
-    {
-        display:flex;
-        width:70%;
-        margin-left:15%;
-    }
-    .submitButton
-    {
-        height:auto;
-        font-size:6em;
-        text-align:center;
-        padding-bottom:0em;
-    }
-} */
-
-
-
-/* -------------------------- */
-/* SURFACE DUO -------------- */
-/* -------------------------- */
-/*---- LANDSCAPE ----*/
-/* @media only screen
-and (device-height : 540px)
-and (device-width : 720px)
-{
-    .facePicture
-    {
-        margin-top:-3em;
-    }
-    .sliderWrapWrap
-    {
-        margin-top:5em;
-        margin-bottom:9em;
-        transform:scaleY(2) scaleX(2.2);
-    }
-    .sliderText
-    {
-        font-size:2.5em;
-        margin-bottom:-0.5em;
-    }
-    .frame-sliders
-    {
-        display:flex;
-        flex-direction:column;
-    }
-    .frame-button
-    {
-        display:flex;
-        width:70%;
-        margin-left:15%;
-    }
-    .submitButton
-    {
-        height:auto;
-        font-size:6em;
-        text-align:center;
-        padding-bottom:0em;
-    }
-} */

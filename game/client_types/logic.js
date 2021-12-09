@@ -169,6 +169,13 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
             console.log(player.initiated);
             console.log(' -- evaluation round -- ');
             console.log(player.evalRound);
+            console.log('-- reseting players eval round --');
+            player.evalRound--;
+            if(player.evalRound === -1) {
+                player.evalRound = 0;
+            }
+            console.log(' -- RESETED evaluation round -- ');
+            console.log(player.evalRound);
             console.log();
             console.log();
 
@@ -187,42 +194,42 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
         // ++++++
 
 
-        node.game.disconnected.reIntroduce = function(player) {
-
-            console.log();
-            console.log();
-            console.log(' --- Player ' + player.id + ' is reconnected ---');
-            console.log(' --- Reconnected player\'s count is ' + player.count + ' ---');
-            console.log();
-            console.log(' --- Reconnected player\'s info in logic data base ---');
-            console.log(' -- picture index order -- ');
-            console.log(player.pictureIndexOrder);
-            console.log(' -- is initiated-- ');
-            console.log(player.initiated);
-            console.log(' -- evaluation round -- ');
-            console.log(player.evalRound);
-            console.log();
-            console.log();
-
-            // disconnected before evaluating the previous round
-            // so we go back to the previous round
-            player.evalRound--;
-
-            let pIndex = player.evalRound - 1;
-
-            let currentFaceIndex = player.pictureIndexOrder[pIndex];
-
-            let data = {
-                currentFaceIndex: player.pictureIndexOrder[pIndex],
-                currentRound: player.evalRound
-            }
-
-            console.log(' -- data to be sent to the reconnected player');
-            console.log(data);
-
-            node.say('LOGIC-nextPicture', player.id, data);
-
-        }
+        // node.game.disconnected.reIntroduce = function(player) {
+        //
+        //     console.log();
+        //     console.log();
+        //     console.log(' --- Player ' + player.id + ' is reconnected ---');
+        //     console.log(' --- Reconnected player\'s count is ' + player.count + ' ---');
+        //     console.log();
+        //     console.log(' --- Reconnected player\'s info in logic data base ---');
+        //     console.log(' -- picture index order -- ');
+        //     console.log(player.pictureIndexOrder);
+        //     console.log(' -- is initiated-- ');
+        //     console.log(player.initiated);
+        //     console.log(' -- evaluation round -- ');
+        //     console.log(player.evalRound);
+        //     console.log();
+        //     console.log();
+        //
+        //     // disconnected before evaluating the previous round
+        //     // so we go back to the previous round
+        //     player.evalRound--;
+        //
+        //     let pIndex = player.evalRound - 1;
+        //
+        //     let currentFaceIndex = player.pictureIndexOrder[pIndex];
+        //
+        //     let data = {
+        //         currentFaceIndex: player.pictureIndexOrder[pIndex],
+        //         currentRound: player.evalRound
+        //     }
+        //
+        //     console.log(' -- data to be sent to the reconnected player');
+        //     console.log(data);
+        //
+        //     node.say('LOGIC-nextPicture', player.id, data);
+        //
+        // }
 
 
 
@@ -238,7 +245,7 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
             // console.log();
             // console.log();
 
-            node.game.disconnected.reIntroduce(player);
+            // node.game.disconnected.reIntroduce(player);
 
         },
 

@@ -44,8 +44,6 @@ and (min-width : 1080px)
     }
     .frame-button
     {
-        /* padding-left:15%; */
-        /* padding-right:15%; */
         padding-top:3em;
         padding-bottom:3em;
         margin-top:1em;
@@ -60,7 +58,6 @@ and (min-width : 1080px)
 }
 
 
-
 /*--------------------------------*/
 /*----- SPECIFIC LAPTOP SIZES ----*/
 /*--------------------------------*/
@@ -70,32 +67,26 @@ and (min-width : 1080px)
 and (device-height : 720px)
 and (device-width : 1280px)
 {
-    .frame-B
-    {
-        /* margin-left:-8em; */
-    }
     .submitButton
     {
-        font-size:6em;
+        font-size:7em;
         height:1.7em;
     }
 }
+
 
 /*------------ 5% ----------------*/
 @media only screen
 and (device-height : 800px)
 and (device-width : 1280px)
 {
-    .frame-B
-    {
-        /* margin-left:-8em; */
-    }
     .submitButton
     {
-        font-size:6rem;
+        font-size:7rem;
         height:1.7em;
     }
 }
+
 
 /*------------ 4% ----------------*/
 @media only screen
@@ -117,14 +108,13 @@ and (device-width : 1600px)
     }
     .submitButton
     {
-        font-size:7em;
+        font-size:7rem;
         height:1.7em;
     }
 }
 
 
 /*------------- 6% ---------------*/
-
 @media only screen
 and (device-height : 900px)
 and (device-width : 1440px)
@@ -146,14 +136,13 @@ and (device-width : 1440px)
     }
     .submitButton
     {
-        font-size:5em;
+        font-size:7rem;
         height:1.7em;
     }
 }
 
 
 /*------------ %7 ----------------*/
-
 @media only screen
 and (device-height : 864px)
 and (device-width : 1536px)
@@ -174,7 +163,7 @@ and (device-width : 1536px)
     .submitButton
     {
         height:1.5em;
-        font-size:4em;
+        font-size:7rem;
         padding-bottom:1.6em;
     }
 }
@@ -209,7 +198,7 @@ and (device-width : 1920px)
     .submitButton
     {
         height:1.5em;
-        font-size:7em;
+        font-size:7rem;
         padding-bottom:1.6em;
     }
 }
@@ -229,25 +218,15 @@ and (device-width : 1024px)
         transform-origin: top;
         transform:scale(0.85);
     }
-    .frame-progressBar
-    {
-        /* margin-bottom:5%; */
-    }
-    .facePicture
-    {
-        /* margin-top:-3em; */
-    }
     .sliderWrapWrap
     {
         margin-top:5em;
-        /* margin-bottom:10em; */
         margin-bottom:24%;
         transform:scaleY(2) scaleX(2.2);
     }
     .sliderText
     {
         font-size:2.5em;
-        /* margin-bottom:-0.5em; */
         margin-bottom:6%;
     }
     .frame-sliders
@@ -288,10 +267,6 @@ and (device-width : 1366px)
         transform-origin: top;
         transform:scale(0.85);
     }
-    .frame-progressBar
-    {
-        /* margin-bottom:5%; */
-    }
     .frame-B
     {
         transform:scale(1);
@@ -300,7 +275,6 @@ and (device-width : 1366px)
     .sliderWrapWrap
     {
         margin-top:6em;
-        /* margin-bottom:16em; */
         margin-bottom:24%;
         transform:scaleY(2) scaleX(2.2);
     }
@@ -311,6 +285,6 @@ and (device-width : 1366px)
     }
     .submitButton
     {
-        font-size:5em;
+        font-size:7rem;
     }
 }

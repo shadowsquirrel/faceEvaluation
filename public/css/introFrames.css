@@ -9,7 +9,7 @@ html,body
 }
 body {
     position: relative;
-    transform-origin: top left;
+    /* transform-origin: top left; */
 }
 
 .space

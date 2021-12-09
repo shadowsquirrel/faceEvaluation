@@ -339,6 +339,10 @@ and (device-height: 823px)
 and (device-width : 1024px)
 and (device-height : 768px)
 {
+    .instructionText-1
+    {
+        font-size:6rem;
+    }
     .frame-InfoBoxWrap
     {
         transform-origin: top;
@@ -371,6 +375,10 @@ and (device-height : 768px)
 and (device-width : 768px)
 and (device-height : 1024px)
 and (orientation : portrait) {
+    .instructionText-1
+    {
+        font-size:6rem;
+    }
     .frame-InfoBoxWrap
     {
         transform-origin: top;
@@ -447,6 +455,10 @@ and (min-width : 1025px)
 and (device-width : 1366px)
 and (device-height : 1024px)
 {
+    .instructionText-1
+    {
+        font-size:6rem;
+    }
     .sliderText
     {
         font-size:3vh;
@@ -475,6 +487,10 @@ and (device-width : 1024px)
 and (device-height : 1366px)
 and (orientation : portrait)
 {
+    .instructionText-1
+    {
+        font-size:6rem;
+    }
     .sliderText
     {
         font-size:6vh;
@@ -637,13 +653,32 @@ and (device-width : 1280px)
 and (max-device-width: 428px)
 and (max-device-height: 926px)
 {
-
-    .instructionText-6
+    /* .instructionText-6
     {
         font-size:9rem;
     }
+    .instructionText-1
+    {
+        font-size:11rem;
+    }
+    .instructionText-2
+    {
+        font-size:9rem;
+    }
+    .instructionText-3
+    {
+        font-size:9rem;
+    } */
 
-
+    .infoBoxText
+    {
+        font-size:9rem;
+    }
+    .sliderBar
+    {
+        transform-origin: top;
+        transform:scale(2.5);
+    }
 }
 
 
@@ -660,10 +695,14 @@ and (max-device-height: 926px)
 and (max-device-width: 926px)
 AND (max-device-height: 428px)
 {
-
-    .instructionText-6
+    .infoBoxText
     {
         font-size:9rem;
+    }
+    .sliderBar
+    {
+        transform-origin: top;
+        transform:scale(2.5);
     }
 
 }
