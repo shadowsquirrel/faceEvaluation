@@ -99,8 +99,28 @@ $('#okButton-6').click(function() {
 
 })
 
-$('#redoButton-7').click(function() {
+$('#okButton-7').click(function() {
 
-    box.transition(7,2);
+    box.transition(7,8);
+
+})
+
+
+$('#okButton-8').click(function() {
+
+    box.transition(8,9);
+
+})
+
+$('#okButton-9').click(function() {
+
+    box.transition(9,10);
+
+})
+
+
+$('#redoButton-10').click(function() {
+
+    box.transition(10,2);
 
 })

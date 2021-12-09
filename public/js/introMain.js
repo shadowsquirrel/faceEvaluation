@@ -2,7 +2,7 @@ window.onload = function() {
 
     var node = parent.node;
 
-    $('#okButton-7').click(function() {
+    $('#okButton-10').click(function() {
 
         node.emit('HTML-finishIntro');
 
